@@ -91,7 +91,7 @@ export default function Header() {
       </div>
 
       {/* === Bottom Nav (Desktop) === */}
-      <nav className="hidden md:block bg-blue-500">
+      <nav className="hidden md:block bg-blue-900">
         <div className="max-w-6xl mx-auto">
           <ul className="flex justify-between text-white font-montserrat text-sm">
             {navLinks.map((link) => (

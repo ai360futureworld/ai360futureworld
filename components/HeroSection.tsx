@@ -54,7 +54,7 @@ const HeroSection = () => {
         <div className="flex justify-center gap-4 flex-wrap">
           <Link
             href="#tools"
-            className="bg-blue-900 hover:bg-blue-950 text-white font-semibold px-6 py-3 rounded-full shadow-sm transition duration-200"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full shadow-sm transition duration-200"
           >
             Explore AI Tools
           </Link>
