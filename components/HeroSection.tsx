@@ -47,8 +47,8 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-gray-600 text-lg md:text-xl mb-10 font-[Inter]">
-          Explore cutting-edge AI tools, technologies, and knowledge that shape
-          the future of innovation.
+          Together We Built The Future with AI tools, technologies, and
+          knowledge.
         </p>
 
         <div className="flex justify-center gap-4 flex-wrap">
