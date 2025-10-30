@@ -41,7 +41,7 @@ export default function RootLayout({
         <main>{children}</main>
 
         {/* === Footer Placeholder === */}
-        <footer className="bg-blue-800 text-white py-8 text-center text-sm font-inter border-t border-neutral-200">
+        <footer className="bg-blue-900 text-white py-8 text-center text-sm font-inter border-t border-neutral-200">
           <p>
             © {new Date().getFullYear()} AI 360 Future. All Rights Reserved.
           </p>
