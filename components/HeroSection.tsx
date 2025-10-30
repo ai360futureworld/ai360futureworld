@@ -41,26 +41,26 @@ const HeroSection = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-extrabold text-neutral-900 leading-tight mb-6 font-[Montserrat]">
           Discover the World Powered by{" "}
-          <span className="text-sky-500 border-r-2 border-sky-500 pr-1 animate-pulse">
+          <span className="text-blue-500 border-r-2 border-blue-500 pr-1 animate-pulse">
             {displayText}
           </span>
         </h1>
 
         <p className="text-gray-600 text-lg md:text-xl mb-10 font-[Inter]">
           Together We Built The Future with AI tools, technologies, and
-          knowledge.
+          knowledge that shape the future of innovation.
         </p>
 
         <div className="flex justify-center gap-4 flex-wrap">
           <Link
             href="#tools"
-            className="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-full shadow-sm transition duration-200"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-sm transition duration-200"
           >
             Explore AI Tools
           </Link>
           <Link
             href="#newsletter"
-            className="border border-sky-500 text-sky-600 hover:bg-sky-50 font-semibold px-6 py-3 rounded-full transition duration-200"
+            className="border border-blue-500 text-blue-600 hover:bg-blue-50 font-semibold px-6 py-3 rounded-full transition duration-200"
           >
             Join Newsletter
           </Link>

@@ -11,37 +11,37 @@ import {
 
 const cards = [
   {
-    icon: <FaTools size={30} className="text-sky-500" />,
+    icon: <FaTools size={30} className="text-blue-500" />,
     title: "AI Tools",
     description:
       "Discover the latest AI-powered tools designed to boost productivity and creativity.",
   },
   {
-    icon: <FaBookOpen size={30} className="text-sky-500" />,
+    icon: <FaBookOpen size={30} className="text-blue-500" />,
     title: "AI Courses",
     description:
       "Upskill with structured AI learning paths created by experts worldwide.",
   },
   {
-    icon: <FaBriefcase size={30} className="text-sky-500" />,
+    icon: <FaBriefcase size={30} className="text-blue-500" />,
     title: "AI Jobs",
     description:
       "Explore AI career opportunities across startups, enterprises, and research.",
   },
   {
-    icon: <FaRobot size={30} className="text-sky-500" />,
+    icon: <FaRobot size={30} className="text-blue-500" />,
     title: "AI Technologies",
     description:
       "Stay ahead with cutting-edge advancements in machine learning and automation.",
   },
   {
-    icon: <FaCogs size={30} className="text-sky-500" />,
+    icon: <FaCogs size={30} className="text-blue-500" />,
     title: "AI Automation Hub",
     description:
       "Connect automation tools that streamline processes and workflows effortlessly.",
   },
   {
-    icon: <FaUserGraduate size={30} className="text-sky-500" />,
+    icon: <FaUserGraduate size={30} className="text-blue-500" />,
     title: "Beginner’s Guide",
     description:
       "Start your AI journey with beginner-friendly tutorials and guides.",
@@ -66,7 +66,7 @@ export default function ExploreNetwork() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-100 shadow-sm rounded-2xl p-6 text-center hover:bg-sky-50 hover:shadow-md transition ease-in-out"
+              className="bg-white border border-gray-100 shadow-sm rounded-2xl p-6 text-center hover:bg-blue-50 hover:shadow-md transition ease-in-out"
             >
               <div className="flex justify-center mb-4">{card.icon}</div>
               <h3 className="font-montserrat font-semibold text-lg text-neutral-900 mb-2">
