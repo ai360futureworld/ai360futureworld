@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-extrabold text-neutral-900 leading-tight mb-6 font-[Montserrat]">
           Discover the World Powered by{" "}
-          <span className="text-blue-500 border-r-2 border-blue-500 pr-1 animate-pulse">
+          <span className="text-blue-500 border-r-2 border-blue-500 pr-1">
             {displayText}
           </span>
         </h1>

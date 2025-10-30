@@ -2,12 +2,20 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaWhatsapp, FaYoutube, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+  FaTelegramPlane,
+  FaTwitter,
+} from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineMenu } from "react-icons/hi";
 
 const navLinks = [
   "Home",
+  "About",
   "Tools",
   "Courses",
   "Upcoming",
@@ -49,7 +57,7 @@ export default function Header() {
           <input
             type="text"
             placeholder="Search..."
-            className="w-full max-w-md px-3 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full max-w-md px-4 py-2 rounded-full border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
 
@@ -57,9 +65,21 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-4 text-neutral-700">
           <a
             href="#"
-            className="hover:text-green-500 transition-colors duration-300"
+            className="hover:text-blue-600 transition-colors duration-300"
           >
-            <FaWhatsapp size={20} />
+            <FaFacebookF size={20} />
+          </a>
+          <a
+            href="#"
+            className="hover:text-pink-500 transition-colors duration-300"
+          >
+            <FaInstagram size={20} />
+          </a>
+          <a
+            href="#"
+            className="hover:text-blue-500 transition-colors duration-300"
+          >
+            <FaLinkedin size={20} />
           </a>
           <a
             href="#"
@@ -75,9 +95,9 @@ export default function Header() {
           </a>
           <a
             href="#"
-            className="hover:text-blue-500 transition-colors duration-300"
+            className="hover:text-blue-400 transition-colors duration-300"
           >
-            <FaLinkedin size={20} />
+            <FaTelegramPlane size={20} />
           </a>
         </div>
 
@@ -138,12 +158,14 @@ export default function Header() {
             <IoClose />
           </button>
 
+          {/* Mobile Search */}
           <input
             type="text"
             placeholder="Search..."
-            className="mb-6 px-3 py-2 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mb-6 px-4 py-2 rounded-full border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
 
+          {/* Nav Links */}
           <div className="flex flex-col space-y-2 font-inter">
             {navLinks.map((link) => (
               <a
@@ -159,8 +181,14 @@ export default function Header() {
 
           {/* Social Icons */}
           <div className="flex space-x-4 text-neutral-600 mt-auto pt-6 border-t border-neutral-200">
-            <a href="#" className="hover:text-green-500">
-              <FaWhatsapp size={20} />
+            <a href="#" className="hover:text-blue-600">
+              <FaFacebookF size={20} />
+            </a>
+            <a href="#" className="hover:text-pink-500">
+              <FaInstagram size={20} />
+            </a>
+            <a href="#" className="hover:text-blue-500">
+              <FaLinkedin size={20} />
             </a>
             <a href="#" className="hover:text-red-500">
               <FaYoutube size={20} />
@@ -168,8 +196,8 @@ export default function Header() {
             <a href="#" className="hover:text-sky-400">
               <FaTwitter size={20} />
             </a>
-            <a href="#" className="hover:text-blue-500">
-              <FaLinkedin size={20} />
+            <a href="#" className="hover:text-blue-400">
+              <FaTelegramPlane size={20} />
             </a>
           </div>
         </aside>
