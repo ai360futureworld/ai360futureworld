@@ -11,37 +11,37 @@ import {
 
 const cards = [
   {
-    icon: <FaTools size={30} className="text-sky-400" />,
+    icon: <FaTools size={30} className="text-sky-500" />,
     title: "AI Tools",
     description:
       "Discover the latest AI-powered tools designed to boost productivity and creativity.",
   },
   {
-    icon: <FaBookOpen size={30} className="text-sky-400" />,
+    icon: <FaBookOpen size={30} className="text-sky-500" />,
     title: "AI Courses",
     description:
       "Upskill with structured AI learning paths created by experts worldwide.",
   },
   {
-    icon: <FaBriefcase size={30} className="text-sky-400" />,
+    icon: <FaBriefcase size={30} className="text-sky-500" />,
     title: "AI Jobs",
     description:
       "Explore AI career opportunities across startups, enterprises, and research.",
   },
   {
-    icon: <FaRobot size={30} className="text-sky-400" />,
+    icon: <FaRobot size={30} className="text-sky-500" />,
     title: "AI Technologies",
     description:
       "Stay ahead with cutting-edge advancements in machine learning and automation.",
   },
   {
-    icon: <FaCogs size={30} className="text-sky-400" />,
+    icon: <FaCogs size={30} className="text-sky-500" />,
     title: "AI Automation Hub",
     description:
       "Connect automation tools that streamline processes and workflows effortlessly.",
   },
   {
-    icon: <FaUserGraduate size={30} className="text-sky-400" />,
+    icon: <FaUserGraduate size={30} className="text-sky-500" />,
     title: "Beginner’s Guide",
     description:
       "Start your AI journey with beginner-friendly tutorials and guides.",
@@ -57,8 +57,8 @@ export default function ExploreNetwork() {
           Explore the AI 360 Future Network
         </h2>
         <p className="font-inter text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-12">
-          Discover how AI tools, courses, jobs, technologies, and automation
-          connect seamlessly in one global ecosystem.
+          Experience the world’s most powerful AI ecosystem — where innovation
+          meets opportunity.
         </p>
 
         {/* === Cards Grid === */}
