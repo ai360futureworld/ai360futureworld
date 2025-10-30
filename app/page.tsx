@@ -1,3 +1,9 @@
+import ExploreNetwork from "@/components/ExploreNetwork";
+
 export default function Home() {
-  return <main className="bg-gray-50 text-neutral-900 font-inter"></main>;
+  return (
+    <main className="min-h-screen bg-gray-50">
+      <ExploreNetwork />
+    </main>
+  );
 }

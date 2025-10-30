@@ -38,7 +38,7 @@ export default function RootLayout({
         <Header />
 
         {/* === Main Content === */}
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
 
         {/* === Footer Placeholder === */}
         <footer className="bg-[#002b6f] text-white py-8 text-center text-sm font-inter border-t border-neutral-200">
