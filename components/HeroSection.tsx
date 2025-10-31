@@ -39,14 +39,14 @@ const HeroSection = () => {
   return (
     <section className="bg-white py-28 px-6 md:px-12 text-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-neutral-900 leading-tight mb-6 font-[Montserrat]">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-neutral-900 leading-tight mb-6 font-montserrat">
           Discover the World Powered by{" "}
           <span className="text-blue-500 border-r-2 border-blue-500 pr-1">
             {displayText}
           </span>
         </h1>
 
-        <p className="text-gray-600 text-lg md:text-xl mb-10 font-[Inter]">
+        <p className="text-gray-600 text-lg md:text-xl mb-10">
           Together We Built The Future with AI tools, technologies, and
           knowledge that shape the future of innovation.
         </p>

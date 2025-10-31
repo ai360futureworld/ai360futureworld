@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// === Font Configuration ===
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500"],
@@ -17,14 +16,12 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-// === Page Metadata ===
 export const metadata: Metadata = {
   title: "AI 360 Future",
   description:
     "Discover the world powered by AI – Tools, Jobs, Courses, and Innovation.",
 };
 
-// === Root Layout ===
 export default function RootLayout({
   children,
 }: {
@@ -35,13 +32,8 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${montserrat.variable} bg-gray-50 text-neutral-900 antialiased`}
       >
-        {/* === Header (Sticky, Global) === */}
         <Header />
-
-        {/* === Main Content === */}
         <main>{children}</main>
-
-        {/* === Footer Placeholder === */}
         <Footer />
       </body>
     </html>

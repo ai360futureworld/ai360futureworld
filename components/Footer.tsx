@@ -30,18 +30,12 @@ export default function Footer() {
       {/* === Navigation Links === */}
       <nav className="flex flex-wrap justify-center gap-5 sm:gap-8 max-w-5xl mx-auto mb-10">
         {[
-          "Home",
-          "About",
-          "Tools",
-          "Courses",
-          "Upcoming",
-          "Jobs",
-          "Insights",
-          "Beginners Guide",
-          "Top List",
-          "Contact",
-          "Privacy",
-          "Terms",
+          "Contact Us",
+          "FAQ – Help & Support",
+          "Refund & Cancellation Policy",
+          "Privacy Policy",
+          "Terms & Conditions",
+          "Affiliate Disclosure",
         ].map((link, idx) => (
           <a
             key={idx}
@@ -54,25 +48,23 @@ export default function Footer() {
       </nav>
 
       {/* === Social Icons === */}
-      <div className="flex justify-center space-x-5 mb-8">
-        <a href="#" className="hover:text-sky-400 transition-all">
-          <FaFacebookF size={20} />
-        </a>
-        <a href="#" className="hover:text-sky-400 transition-all">
-          <FaTwitter size={20} />
-        </a>
-        <a href="#" className="hover:text-sky-400 transition-all">
-          <FaInstagram size={20} />
-        </a>
-        <a href="#" className="hover:text-sky-400 transition-all">
-          <FaLinkedinIn size={20} />
-        </a>
-        <a href="#" className="hover:text-sky-400 transition-all">
-          <FaYoutube size={20} />
-        </a>
-        <a href="#" className="hover:text-sky-400 transition-all">
-          <FaTelegramPlane size={20} />
-        </a>
+      <div className="flex justify-center space-x-4 mb-8">
+        {[
+          { icon: FaFacebookF },
+          { icon: FaTwitter },
+          { icon: FaInstagram },
+          { icon: FaLinkedinIn },
+          { icon: FaYoutube },
+          { icon: FaTelegramPlane },
+        ].map(({ icon: Icon }, idx) => (
+          <a
+            key={idx}
+            href="#"
+            className="bg-blue-800 hover:bg-sky-500 transition-all text-white p-3 rounded-xl flex items-center justify-center"
+          >
+            <Icon size={18} />
+          </a>
+        ))}
       </div>
 
       {/* === Copyright === */}

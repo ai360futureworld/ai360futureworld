@@ -24,9 +24,6 @@ export default function AINewsBlog() {
       <div className="max-w-6xl mx-auto px-6">
         {/* === Section Heading === */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-1 rounded-full mb-4 font-inter">
-            From Research to Real-World AI
-          </div>
           <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-neutral-900 mb-3">
             AI Blog & Latest News
           </h2>
@@ -70,7 +67,7 @@ export default function AINewsBlog() {
         <div className="text-center mt-12">
           <a
             href="#"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold font-inter transition"
+            className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold px-5 py-2 rounded-md transition"
           >
             View All Blog Posts →
           </a>

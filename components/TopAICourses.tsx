@@ -50,7 +50,7 @@ export default function TopAICourses() {
         {/* === Section Heading === */}
         <div className="text-center mb-12">
           <h2 className="font-montserrat font-extrabold text-4xl md:text-5xl text-neutral-900 mb-3">
-            Explore Top AI Learning Paths
+            Explore Curated AI Courses from the World’s Leading Platforms
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
             Master artificial intelligence with curated, industry-leading
@@ -105,7 +105,7 @@ export default function TopAICourses() {
                     {course.provider}
                   </p>
                   <div className="mt-2 mb-4">
-                    <span className="text-sm font-semibold text-blue-600 font-inter">
+                    <span className="text-sm font-semibold text-blue-500 font-inter">
                       {course.price === 0 ? "Free" : `₹${course.price}`}
                     </span>
                   </div>
@@ -122,7 +122,7 @@ export default function TopAICourses() {
         <div className="text-center mt-10">
           <a
             href="#"
-            className="text-blue-600 font-semibold hover:text-blue-800 font-inter transition"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold px-5 py-2 rounded-md transition"
           >
             View All Courses →
           </a>

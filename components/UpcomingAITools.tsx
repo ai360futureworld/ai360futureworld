@@ -29,11 +29,8 @@ export default function UpcomingAITools() {
       <div className="max-w-6xl mx-auto px-6">
         {/* === Heading === */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-1 rounded-full mb-4 font-inter">
-            Upcoming Launches
-          </div>
           <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-neutral-900 mb-3">
-            Discover the Next Wave of AI Tools
+            The Cutting Edge of AI — Tools Redefining Innovation
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
             Stay ahead of innovation — explore AI tools launching soon across
@@ -60,15 +57,21 @@ export default function UpcomingAITools() {
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-neutral-200 text-neutral-700">
+            <tbody className="border border-neutral-300 text-neutral-700">
               {upcomingTools.map((tool, idx) => (
                 <tr
                   key={idx}
-                  className="hover:bg-neutral-50 transition-all duration-200"
+                  className="border-b border-neutral-300 hover:bg-neutral-50 transition-all duration-200"
                 >
-                  <td className="py-3 px-4 font-medium">{tool.name}</td>
-                  <td className="py-3 px-4">{tool.category}</td>
-                  <td className="py-3 px-4 text-neutral-600">{tool.launch}</td>
+                  <td className="py-3 px-4 font-medium border-r border-neutral-300">
+                    {tool.name}
+                  </td>
+                  <td className="py-3 px-4 border-r border-neutral-300">
+                    {tool.category}
+                  </td>
+                  <td className="py-3 px-4 text-neutral-600 border-r border-neutral-300">
+                    {tool.launch}
+                  </td>
                   <td className="py-3 px-4 text-blue-600 font-semibold">
                     {tool.source}
                   </td>
@@ -82,9 +85,9 @@ export default function UpcomingAITools() {
         <div className="text-center mt-10">
           <a
             href="#"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold font-inter transition"
+            className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold px-5 py-2 rounded-md transition"
           >
-            View All Upcoming Tools
+            View Source
             <FaArrowRight className="ml-2 text-sm" />
           </a>
         </div>

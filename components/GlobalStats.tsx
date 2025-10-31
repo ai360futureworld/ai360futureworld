@@ -105,12 +105,12 @@ export default function GlobalStats() {
             className="flex flex-col items-center justify-center bg-white border border-neutral-200 shadow-sm rounded-2xl p-8 hover:shadow-md transition"
           >
             {/* Icon */}
-            <div className="bg-blue-600 text-white p-4 rounded-full mb-4 flex items-center justify-center">
+            <div className="bg-blue-500 text-white p-3 rounded-full mb-4 flex items-center justify-center">
               {stat.icon}
             </div>
 
             {/* Counter */}
-            <h3 className="text-4xl font-extrabold text-blue-600 font-montserrat">
+            <h3 className="text-3xl font-bold text-neutral-800 font-montserrat">
               {Math.floor(counts[i])}
               {stat.suffix}
             </h3>

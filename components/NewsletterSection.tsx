@@ -15,7 +15,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section className="bg-blue-50 py-20 border-t border-neutral-200">
+    <section className="bg-white py-20 border-t border-neutral-200">
       <div className="max-w-3xl mx-auto text-center px-6">
         {/* === Heading === */}
         <h2 className="text-3xl md:text-4xl font-extrabold font-montserrat text-neutral-900">
@@ -41,7 +41,7 @@ export default function NewsletterSection() {
           />
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition font-inter"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 text-white font-semibold rounded-xl hover:bg-blue-700 transition font-inter"
           >
             <FaPaperPlane />
             Subscribe

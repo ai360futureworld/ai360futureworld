@@ -20,7 +20,7 @@ const navLinks = [
   "Courses",
   "Upcoming",
   "Jobs",
-  "Blog",
+  "Insight",
   "Beginners",
   "Top Lists",
   "Contact",
@@ -46,7 +46,7 @@ export default function Header() {
             <span className="font-montserrat text-blue-500 text-lg font-semibold">
               AI 360 Future
             </span>
-            <span className="text-neutral-600 text-xs font-inter mt-0.5">
+            <span className="text-neutral-600 text-xs mt-0.5">
               Discover the world powered by AI
             </span>
           </div>
@@ -171,7 +171,7 @@ export default function Header() {
               <a
                 key={link}
                 href={`#${link.toLowerCase().replace(" ", "-")}`}
-                className="block text-neutral-800 font-medium px-2 py-2 rounded hover:bg-blue-100 transition"
+                className="font-montserrat block text-neutral-800 font-medium px-2 py-2 rounded hover:bg-blue-100 transition"
                 onClick={() => setMobileOpen(false)}
               >
                 {link}
