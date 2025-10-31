@@ -28,7 +28,7 @@ export default function Footer() {
       </div>
 
       {/* === Navigation Links === */}
-      <nav className="flex flex-wrap justify-center gap-5 sm:gap-8 max-w-5xl mx-auto mb-10">
+      <nav className="flex flex-wrap justify-center gap-5 sm:gap-8 max-w-7xl mx-auto mb-10">
         {[
           "Contact Us",
           "FAQ – Help & Support",

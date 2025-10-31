@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import {
@@ -119,12 +120,16 @@ export default function Header() {
                 key={link}
                 className="flex-1 text-center border-r border-blue-400 last:border-none hover:bg-blue-600 transition-colors duration-300"
               >
-                <a
-                  href={`#${link.toLowerCase().replace(" ", "-")}`}
+                <Link
+                  href={
+                    link === "Home"
+                      ? "/"
+                      : `/${link.toLowerCase().replace(/\s+/g, "-")}`
+                  }
                   className="block px-4 py-3"
                 >
                   {link}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -168,14 +173,18 @@ export default function Header() {
           {/* Nav Links */}
           <div className="flex flex-col space-y-2 font-inter">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link}
-                href={`#${link.toLowerCase().replace(" ", "-")}`}
+                href={
+                  link === "Home"
+                    ? "/"
+                    : `/${link.toLowerCase().replace(/\s+/g, "-")}`
+                }
                 className="font-montserrat block text-neutral-800 font-medium px-2 py-2 rounded hover:bg-blue-100 transition"
                 onClick={() => setMobileOpen(false)}
               >
                 {link}
-              </a>
+              </Link>
             ))}
           </div>
 
