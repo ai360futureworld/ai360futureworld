@@ -42,13 +42,13 @@ export default function ContactPage() {
       </div>
 
       {/* === Header Section === */}
-      <div className="max-w-4xl mx-auto text-center py-12 px-6">
-        <h1 className="text-4xl font-bold font-montserrat text-gray-900 mb-4">
+      <div className="max-w-3xl mx-auto text-center py-16 px-6">
+        <h1 className=" text-4xl md:text-5xl font-bold font-montserrat text-gray-900 mb-4">
           Get in Touch with Our Global AI Team
         </h1>
-        <p className="text-lg font-inter text-gray-600 leading-relaxed">
-          Collaborate, innovate, and grow with us. <br />
-          Reach out for partnerships, media, or technical support.
+        <p className="font-inter text-gray-600 md:text-lg leading-relaxed">
+          Collaborate, innovate, and grow with us. Reach out for partnerships,
+          media, or technical support - our global Al team is here to help.
         </p>
       </div>
 
@@ -61,30 +61,31 @@ export default function ContactPage() {
               title: "General Inquiry",
               email: "info@ai360futureworld.com",
               desc: "Default catch-all mail",
-              icon: <FaEnvelope className="text-blue-500 text-xl" />,
+              icon: <FaEnvelope className="text-blue-500 text-[30px]" />,
             },
             {
               title: "Technical Support",
               email: "support@ai360futureworld.com",
               desc: "User issues, bug reports",
-              icon: <FaCogs className="text-blue-500 text-xl" />,
+              icon: <FaCogs className="text-blue-500 text-[30px]" />,
             },
             {
               title: "Partnership / Collaboration",
               email: "partners@ai360futureworld.com",
               desc: "Affiliate or business inquiries",
-              icon: <FaHandshake className="text-blue-500 text-xl" />,
+              icon: <FaHandshake className="text-blue-500 text-[30px]" />,
             },
             {
               title: "Media / PR Request",
               email: "media@ai360futureworld.com",
               desc: "Press or media requests",
-              icon: <FaBullhorn className="text-blue-500 text-xl" />,
+              icon: <FaBullhorn className="text-blue-500 text-[30px]" />,
             },
           ].map((item, idx) => (
             <div
               key={idx}
-              className="flex items-start border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition"
+              className="flex items-start border border-neutral-200 rounded-2xl p-6 shadow-sm 
+                 hover:shadow-md hover:border-blue-400 transition-all duration-200"
             >
               <div className="mr-4 mt-1">{item.icon}</div>
               <div>
