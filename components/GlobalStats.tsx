@@ -6,8 +6,8 @@ import {
   FaTools,
   FaBrain,
   FaBriefcase,
-  FaBookOpen,
-  FaUsers,
+  FaGraduationCap,
+  FaChartLine,
 } from "react-icons/fa";
 
 const stats = [
@@ -49,15 +49,15 @@ const stats = [
     suffix: "+",
     title: "AI Courses & Certifications",
     desc: "Learn AI from top educators and platforms worldwide.",
-    icon: <FaBookOpen size={26} />,
+    icon: <FaGraduationCap size={26} />,
   },
   {
     id: 6,
     number: 25,
-    suffix: "k+",
+    suffix: " k+",
     title: "Users & Growing",
     desc: "Trusted by innovators, students, and creators globally.",
-    icon: <FaUsers size={26} />,
+    icon: <FaChartLine size={26} />,
   },
 ];
 

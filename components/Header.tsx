@@ -44,8 +44,8 @@ export default function Header() {
             className="object-contain"
           />
           <div className="ml-2 flex flex-col">
-            <span className="font-montserrat text-blue-500 text-lg font-semibold">
-              AI 360 Future
+            <span className="font-montserrat text-blue-500 text-2xl font-semibold">
+              AI 360 FUTURE
             </span>
             <span className="text-neutral-600 text-xs mt-0.5">
               Discover the world powered by AI
@@ -114,7 +114,7 @@ export default function Header() {
       {/* === Bottom Nav (Desktop) === */}
       <nav className="hidden md:block bg-blue-500">
         <div className="max-w-6xl mx-auto">
-          <ul className="flex justify-between text-white font-montserrat text-sm">
+          <ul className="flex justify-between text-white font-montserrat text-base">
             {navLinks.map((link) => (
               <li
                 key={link}

@@ -23,8 +23,11 @@ export default function Footer() {
           className="object-contain mb-3"
         />
         <h2 className="text-white text-2xl font-semibold tracking-wide">
-          AI 360 Future
+          AI 360 FUTURE
         </h2>
+        <p className="text-neutral-200 text-sm mt-0.5">
+          Discover the world powered by AI
+        </p>
       </div>
 
       {/* === Navigation Links === */}
