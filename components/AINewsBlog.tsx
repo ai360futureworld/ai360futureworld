@@ -69,7 +69,7 @@ export default function AINewsBlog() {
         <div className="flex justify-center mt-10">
           <a
             href="#"
-            className="inline-flex items-center justify-center w-48 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold rounded-full transition duration-300"
+            className="inline-flex items-center justify-center w-56 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold rounded-full transition duration-300"
           >
             View More
             <FaArrowRight className="ml-2 text-sm" />

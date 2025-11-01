@@ -15,7 +15,7 @@ const techs = [
   { name: "Natural Language", icon: <FaBook /> },
   { name: "Computer Vision", icon: <FaCogs /> },
   { name: "Reinforcement Learning", icon: <FaBolt /> },
-  { name: "AI Ethics", icon: <FaShieldAlt /> },
+  { name: "Responsible AI", icon: <FaShieldAlt /> },
 ];
 
 export default function AITechOverview() {
