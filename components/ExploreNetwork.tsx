@@ -29,13 +29,13 @@ const cards = [
       "Explore AI career opportunities across startups, enterprises, and research.",
   },
   {
-    icon: <FaRobot size={50} className="text-blue-500" />,
+    icon: <FaRobot size={40} className="text-blue-500" />,
     title: "AI Technologies",
     description:
       "Stay ahead with cutting-edge advancements in machine learning and automation.",
   },
   {
-    icon: <FaCogs size={50} className="text-blue-500" />,
+    icon: <FaCogs size={40} className="text-blue-500" />,
     title: "AI Automation Hub",
     description:
       "Connect automation tools that streamline processes and workflows effortlessly.",
