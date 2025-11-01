@@ -23,7 +23,7 @@ const navLinks = [
   "Jobs",
   "Insight",
   "Beginners",
-  "Top Lists",
+  "TopLists",
   "Contact",
 ];
 
@@ -63,43 +63,23 @@ export default function Header() {
         </div>
 
         {/* Desktop Social Icons */}
-        <div className="hidden md:flex items-center space-x-4 text-neutral-700">
-          <a
-            href="#"
-            className="hover:text-blue-600 transition-colors duration-300"
-          >
-            <FaFacebookF size={20} />
-          </a>
-          <a
-            href="#"
-            className="hover:text-pink-500 transition-colors duration-300"
-          >
-            <FaInstagram size={20} />
-          </a>
-          <a
-            href="#"
-            className="hover:text-blue-500 transition-colors duration-300"
-          >
-            <FaLinkedin size={20} />
-          </a>
-          <a
-            href="#"
-            className="hover:text-red-500 transition-colors duration-300"
-          >
-            <FaYoutube size={20} />
-          </a>
-          <a
-            href="#"
-            className="hover:text-sky-400 transition-colors duration-300"
-          >
-            <FaTwitter size={20} />
-          </a>
-          <a
-            href="#"
-            className="hover:text-blue-400 transition-colors duration-300"
-          >
-            <FaTelegramPlane size={20} />
-          </a>
+        <div className="hidden md:flex items-center space-x-2 text-neutral-700">
+          {[
+            { icon: <FaFacebookF size={14} />, color: "bg-blue-600" },
+            { icon: <FaInstagram size={14} />, color: "bg-pink-500" },
+            { icon: <FaLinkedin size={14} />, color: "bg-blue-500" },
+            { icon: <FaYoutube size={14} />, color: "bg-red-600" },
+            { icon: <FaTwitter size={14} />, color: "bg-sky-400" },
+            { icon: <FaTelegramPlane size={14} />, color: "bg-blue-400" },
+          ].map((item, i) => (
+            <a
+              key={i}
+              href="#"
+              className={`flex items-center justify-center ${item.color} text-white rounded-md w-7 h-7 transition-transform transform hover:scale-110 shadow-sm`}
+            >
+              {item.icon}
+            </a>
+          ))}
         </div>
 
         {/* Mobile Hamburger */}
@@ -189,25 +169,23 @@ export default function Header() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 text-neutral-600 mt-auto pt-6 border-t border-neutral-200">
-            <a href="#" className="hover:text-blue-600">
-              <FaFacebookF size={20} />
-            </a>
-            <a href="#" className="hover:text-pink-500">
-              <FaInstagram size={20} />
-            </a>
-            <a href="#" className="hover:text-blue-500">
-              <FaLinkedin size={20} />
-            </a>
-            <a href="#" className="hover:text-red-500">
-              <FaYoutube size={20} />
-            </a>
-            <a href="#" className="hover:text-sky-400">
-              <FaTwitter size={20} />
-            </a>
-            <a href="#" className="hover:text-blue-400">
-              <FaTelegramPlane size={20} />
-            </a>
+          <div className="flex space-x-2 text-neutral-600 mt-auto pt-6 border-t border-neutral-200">
+            {[
+              <FaFacebookF size={14} />,
+              <FaInstagram size={14} />,
+              <FaLinkedin size={14} />,
+              <FaYoutube size={14} />,
+              <FaTwitter size={14} />,
+              <FaTelegramPlane size={14} />,
+            ].map((icon, i) => (
+              <a
+                key={i}
+                href="#"
+                className="flex items-center justify-center bg-blue-500 text-white rounded-md w-7 h-7 transition-transform duration-300 hover:scale-110"
+              >
+                {icon}
+              </a>
+            ))}
           </div>
         </aside>
       </div>
