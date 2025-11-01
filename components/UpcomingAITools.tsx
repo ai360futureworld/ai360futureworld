@@ -43,37 +43,37 @@ export default function UpcomingAITools() {
           <table className="min-w-full text-center font-inter text-sm md:text-base">
             <thead className="bg-blue-500 text-white">
               <tr>
-                <th className="py-2 px-2 md:py-4 md:px-4 font-semibold whitespace-nowrap">
-                  Tool
-                </th>
-                <th className="py-2 px-2 md:py-4 md:px-4 font-semibold whitespace-nowrap">
-                  Category
-                </th>
-                <th className="py-2 px-2 md:py-4 md:px-4 font-semibold whitespace-nowrap">
-                  Launch Date
-                </th>
-                <th className="py-2 px-2 md:py-4 md:px-4 font-semibold whitespace-nowrap">
-                  Source
-                </th>
+                <th className="py-4 px-4 font-semibold">Tool</th>
+                <th className="py-4 px-4 font-semibold">Category</th>
+                <th className="py-4 px-4 font-semibold">Launch Date</th>
+                <th className="py-4 px-4 font-semibold">Source</th>
               </tr>
             </thead>
-            <tbody className="border border-neutral-300 text-neutral-700 text-sm md:text-base">
+            <tbody className="border border-neutral-300 text-neutral-700">
               {upcomingTools.map((tool, idx) => (
                 <tr
                   key={idx}
                   className="border-b border-neutral-300 hover:bg-neutral-50 transition-all duration-200"
                 >
-                  <td className="py-2 px-2 md:py-3 md:px-4 font-medium border-r border-neutral-300">
+                  <td className="py-3 px-4 font-medium border-r border-neutral-300">
                     {tool.name}
                   </td>
-                  <td className="py-2 px-2 md:py-3 md:px-4 border-r border-neutral-300">
+                  <td className="py-3 px-4 border-r border-neutral-300">
                     {tool.category}
                   </td>
-                  <td className="py-2 px-2 md:py-3 md:px-4 text-neutral-600 border-r border-neutral-300">
+                  <td className="py-3 px-4 text-neutral-600 border-r border-neutral-300">
                     {tool.launch}
                   </td>
-                  <td className="py-2 px-2 md:py-3 md:px-4 text-blue-600 font-semibold">
-                    {tool.source}
+                  <td className="py-3 px-4">
+                    <div className="flex justify-center">
+                      <a
+                        href="#"
+                        className="inline-flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-1.5 rounded-full text-xs md:text-sm transition-all duration-300"
+                      >
+                        {tool.source}
+                        <span className="ml-1">→</span>
+                      </a>
+                    </div>
                   </td>
                 </tr>
               ))}
