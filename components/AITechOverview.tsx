@@ -6,7 +6,7 @@ import {
   FaBook,
   FaCogs,
   FaBolt,
-  FaShieldAlt,
+  FaHandHoldingHeart,
 } from "react-icons/fa";
 
 const techs = [
@@ -15,7 +15,7 @@ const techs = [
   { name: "Natural Language", icon: <FaBook /> },
   { name: "Computer Vision", icon: <FaCogs /> },
   { name: "Reinforcement Learning", icon: <FaBolt /> },
-  { name: "Responsible AI", icon: <FaShieldAlt /> },
+  { name: "Responsible AI", icon: <FaHandHoldingHeart /> },
 ];
 
 export default function AITechOverview() {
