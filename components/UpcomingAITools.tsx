@@ -87,7 +87,7 @@ export default function UpcomingAITools() {
             href="#"
             className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold px-5 py-2 rounded-md transition"
           >
-            View Source
+            View upcoming tools
             <FaArrowRight className="ml-2 text-sm" />
           </a>
         </div>
