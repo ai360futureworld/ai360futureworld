@@ -51,13 +51,13 @@ export default function Footer() {
       </nav>
 
       {/* === Social Icons === */}
-      <div className="flex justify-center space-x-2 mb-8">
+      <div className="flex justify-center space-x-3 mb-8">
         {[
           { icon: FaFacebookF, color: "bg-blue-600" },
-          { icon: FaTwitter, color: "bg-sky-400" },
           { icon: FaInstagram, color: "bg-pink-500" },
           { icon: FaLinkedinIn, color: "bg-blue-500" },
           { icon: FaYoutube, color: "bg-red-600" },
+          { icon: FaTwitter, color: "bg-sky-400" },
           { icon: FaTelegramPlane, color: "bg-blue-400" },
         ].map(({ icon: Icon, color }, idx) => (
           <a
