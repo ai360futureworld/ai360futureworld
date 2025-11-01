@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const courses = [
   {
@@ -119,12 +119,13 @@ export default function TopAICourses() {
         </Swiper>
 
         {/* === View All Button === */}
-        <div className="text-center mt-10">
+        <div className="flex justify-center mt-10">
           <a
             href="#"
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold px-5 py-2 rounded-md transition"
+            className="inline-flex items-center justify-center w-48 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold rounded-full transition duration-300"
           >
-            View All Courses →
+            View More
+            <FaArrowRight className="ml-2 text-sm" />
           </a>
         </div>
       </div>

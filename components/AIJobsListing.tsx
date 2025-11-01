@@ -75,10 +75,10 @@ export default function AIJobsListing() {
       <div className="flex justify-center mt-10">
         <a
           href="#"
-          className="inline-flex items-center px-6 py-2 bg-blue-500 text-white font-semibold rounded-xl hover:bg-blue-500 transition font-inter"
+          className="inline-flex items-center justify-center w-48 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold rounded-full transition duration-300"
         >
-          View All Jobs Listing
-          <FaArrowRight className="ml-2" />
+          View More
+          <FaArrowRight className="ml-2 text-sm" />
         </a>
       </div>
     </section>
