@@ -108,7 +108,8 @@ export default function ContactPage() {
         </div>
         {/* === Right: Contact Form === */}
         <div className="bg-white border border-neutral-200 rounded-2xl shadow-sm p-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 font-montserrat">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 font-montserrat flex items-center gap-2">
+            <FaEnvelope className="text-blue-500" />
             Send Us a Message
           </h2>
           <form onSubmit={handleSubmit} className="space-y-5">
