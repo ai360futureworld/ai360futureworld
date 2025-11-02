@@ -68,7 +68,7 @@ export default function UpcomingAITools() {
                     <div className="flex justify-center">
                       <a
                         href="#"
-                        className="inline-flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-1.5 rounded-full text-xs md:text-sm transition-all duration-300"
+                        className="inline-flex items-center justify-center bg-blue-400 hover:bg-blue-500 text-white font-semibold px-4 py-1.5 rounded-full text-xs md:text-sm transition-all duration-300"
                       >
                         view
                         <span className="ml-1">→</span>
