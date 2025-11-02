@@ -1,7 +1,13 @@
 "use client";
 
 import { useState, ChangeEvent, FormEvent } from "react";
-import { FaEnvelope, FaCogs, FaHandshake, FaBullhorn } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaCogs,
+  FaHandshake,
+  FaBullhorn,
+  FaPaperPlane,
+} from "react-icons/fa";
 
 interface FormData {
   name: string;
@@ -53,7 +59,7 @@ export default function ContactPage() {
       </div>
 
       {/* === Contact Section (2 Columns) === */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 pb-16">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 pb-16">
         {/* === Left: Contact Info === */}
         <div className="space-y-6">
           {[
@@ -89,10 +95,10 @@ export default function ContactPage() {
             >
               <div className="mr-4 mt-1">{item.icon}</div>
               <div>
-                <h3 className="text-lg font-semibold text-blue-600 font-montserrat">
+                <h3 className="text-lg font-semibold text-gray-800 font-montserrat">
                   {item.title}
                 </h3>
-                <p className="text-sm font-semibold text-gray-600 font-inter">
+                <p className="text-sm font-semibold text-blue-500 font-inter">
                   {item.email}
                 </p>
                 <p className="text-xs text-neutral-500 mt-1">{item.desc}</p>
@@ -100,7 +106,6 @@ export default function ContactPage() {
             </div>
           ))}
         </div>
-
         {/* === Right: Contact Form === */}
         <div className="bg-white border border-neutral-200 rounded-2xl shadow-sm p-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 font-montserrat">
@@ -118,6 +123,7 @@ export default function ContactPage() {
                 required
                 value={formData.name}
                 onChange={handleChange}
+                placeholder="Enter your full name"
                 className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-neutral-800 focus:ring-2 focus:ring-blue-500 outline-none transition"
               />
             </div>
@@ -133,6 +139,7 @@ export default function ContactPage() {
                 required
                 value={formData.email}
                 onChange={handleChange}
+                placeholder="Enter your email address"
                 className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-neutral-800 focus:ring-2 focus:ring-blue-500 outline-none transition"
               />
             </div>
@@ -148,6 +155,7 @@ export default function ContactPage() {
                 onChange={handleChange}
                 className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-neutral-800 focus:ring-2 focus:ring-blue-500 outline-none transition"
               >
+                <option value="">Select a subject</option>
                 <option>General Inquiry</option>
                 <option>Technical Support</option>
                 <option>Partnership / Collaboration</option>
@@ -166,6 +174,7 @@ export default function ContactPage() {
                 required
                 value={formData.message}
                 onChange={handleChange}
+                placeholder="Write your message here..."
                 className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-neutral-800 focus:ring-2 focus:ring-blue-500 outline-none transition"
               />
             </div>
@@ -173,8 +182,9 @@ export default function ContactPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg transition-all font-inter"
+              className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg transition-all font-inter"
             >
+              <FaPaperPlane size={16} />
               Send Message
             </button>
           </form>

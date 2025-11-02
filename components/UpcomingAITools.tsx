@@ -33,7 +33,7 @@ export default function UpcomingAITools() {
             The Cutting Edge of AI — Tools Redefining Innovation
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
-            Stay ahead of innovation — explore AI tools launching soon across
+            Move faster than the future — explore AI tools launching soon across
             various industries.
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function UpcomingAITools() {
                         href="#"
                         className="inline-flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-1.5 rounded-full text-xs md:text-sm transition-all duration-300"
                       >
-                        {tool.source}
+                        view
                         <span className="ml-1">→</span>
                       </a>
                     </div>

@@ -30,7 +30,7 @@ export default function AINewsBlog() {
             AI Blog & Latest News
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
-            Explore insights, trends, and innovations shaping the future of
+            Explore insights, trends, and advancements shaping the future of
             artificial intelligence.
           </p>
         </div>
