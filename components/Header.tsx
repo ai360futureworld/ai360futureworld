@@ -23,7 +23,6 @@ const navLinks = [
   "Upcoming",
   "Jobs",
   "Insight",
-  "PromptLibrary",
   "Beginners",
   "TopLists",
   "Contact",
