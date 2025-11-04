@@ -58,6 +58,15 @@ export default function TopAICourses() {
           </p>
         </div>
 
+        {/* === Swiper Navigation Buttons === */}
+        <div className="swiper-button-prev absolute left-4 top-1/4 -translate-y-1/4 bg-white border border-neutral-200 p-3 rounded-full shadow-sm text-neutral-700 hover:text-blue-600 hover:shadow-md transition z-10">
+          <FaChevronLeft size={18} />
+        </div>
+
+        <div className="swiper-button-next absolute right-4 top-1/4 -translate-y-1/4 bg-white border border-neutral-200 p-3 rounded-full shadow-sm text-neutral-700 hover:text-blue-600 hover:shadow-md transition z-10">
+          <FaChevronRight size={18} />
+        </div>
+
         {/* === Swiper Slider === */}
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -78,14 +87,6 @@ export default function TopAICourses() {
           }}
           className="pb-8"
         >
-          {/* === Swiper Navigation Buttons === */}
-          <div className="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-neutral-200 p-3 rounded-full shadow-sm text-neutral-700 hover:text-blue-600 hover:shadow-md transition z-10">
-            <FaChevronLeft size={18} />
-          </div>
-
-          <div className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-neutral-200 p-3 rounded-full shadow-sm text-neutral-700 hover:text-blue-600 hover:shadow-md transition z-10">
-            <FaChevronRight size={18} />
-          </div>
           {courses.map((course, idx) => (
             <SwiperSlide key={idx}>
               <div className="bg-white border border-neutral-200 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
