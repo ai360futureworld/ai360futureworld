@@ -22,7 +22,7 @@ const navLinks = [
   "Courses",
   "Upcoming",
   "Jobs",
-  "Insight",
+  "Insights",
   "Beginners",
   "TopLists",
   "Contact",

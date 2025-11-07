@@ -19,7 +19,7 @@ export default function NewsletterSection() {
       <div className="max-w-3xl mx-auto text-center px-6">
         {/* === Heading === */}
         <h2 className="text-3xl md:text-4xl font-extrabold font-montserrat text-neutral-900">
-          Stay Updated — Get Latest AI Tools & News Weekly
+          Stay Updated - Get Latest AI Tools & News Weekly
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-neutral-600 font-inter">

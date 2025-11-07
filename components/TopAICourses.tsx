@@ -50,11 +50,10 @@ export default function TopAICourses() {
         {/* === Section Heading === */}
         <div className="text-center mb-12">
           <h2 className="font-montserrat font-extrabold text-4xl md:text-5xl text-neutral-900 mb-3">
-            Explore Curated AI Courses from the World’s Leading Platforms
+            Discover globally recognized Al courses designed by industry leaders
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
-            Master artificial intelligence with curated, industry-leading
-            courses — from fundamentals to advanced systems.
+            Where human potential and artificial intelligence grow together.
           </p>
         </div>
 

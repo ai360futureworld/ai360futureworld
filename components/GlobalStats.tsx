@@ -92,7 +92,7 @@ export default function GlobalStats() {
           Global Reach & Impact
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
-          AI 360 Future brings together the world’s brightest minds — uniting
+          AI 360 Future brings together the world’s brightest minds - uniting
           technology, talent, and transformation.
         </p>
       </div>

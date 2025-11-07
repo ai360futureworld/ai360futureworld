@@ -23,10 +23,10 @@ export default function AITechOverview() {
     <section className="py-20 px-6 bg-white border-t border-neutral-200 overflow-hidden">
       <div className="text-center mb-12 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold font-montserrat text-neutral-900">
-          AI Technologies Overview
+          Al Technologies Overview
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
-          Explore the key AI fields driving innovation today.
+          Explore the key Al fields changing the world today
         </p>
       </div>
 

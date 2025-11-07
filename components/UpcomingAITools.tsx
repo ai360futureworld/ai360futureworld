@@ -30,10 +30,10 @@ export default function UpcomingAITools() {
         {/* === Heading === */}
         <div className="text-center mb-12">
           <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-neutral-900 mb-3">
-            The Cutting Edge of AI — Tools Redefining Innovation
+            The Cutting Edge of AI - Tools Redefining Innovation
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
-            Move faster than the future — explore AI tools launching soon across
+            Move faster than the future - explore AI tools launching soon across
             various industries.
           </p>
         </div>

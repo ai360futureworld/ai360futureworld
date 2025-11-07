@@ -57,7 +57,7 @@ export default function ExploreNetwork() {
           Explore the AI 360 Future Network
         </h2>
         <p className="font-inter text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-12">
-          Experience the world’s most powerful AI ecosystem — where innovation
+          Experience the world’s most powerful AI ecosystem - where innovation
           meets opportunity.
         </p>
 
