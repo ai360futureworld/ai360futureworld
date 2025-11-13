@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaTwitter,
@@ -33,20 +34,20 @@ export default function Footer() {
       {/* === Navigation Links === */}
       <nav className="flex flex-wrap justify-center gap-5 sm:gap-8 max-w-7xl mx-auto mb-10">
         {[
-          "Contact Us",
-          "FAQ – Help & Support",
-          "Refund & Cancellation Policy",
-          "Privacy Policy",
-          "Terms & Conditions",
-          "Affiliate Disclosure",
-        ].map((link, idx) => (
-          <a
+          { name: "Contact Us", url: "/contact" },
+          { name: "FAQ – Help & Support", url: "/faq" },
+          { name: "Refund & Cancellation Policy", url: "/refund-policy" },
+          { name: "Privacy Policy", url: "/privacy-policy" },
+          { name: "Terms & Conditions", url: "/terms" },
+          { name: "Affiliate Disclosure", url: "/affiliate-disclosure" },
+        ].map((item, idx) => (
+          <Link
             key={idx}
-            href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
+            href={item.url}
             className="text-neutral-100 font-medium text-sm sm:text-base hover:underline hover:decoration-7 hover:decoration-sky-400 hover:underline-offset-4 transition-all"
           >
-            {link}
-          </a>
+            {item.name}
+          </Link>
         ))}
       </nav>
 
