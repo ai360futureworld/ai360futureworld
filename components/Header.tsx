@@ -138,7 +138,7 @@ export default function Header() {
                     <ul className="absolute left-0 w-full bg-white text-neutral-800 shadow-lg font-normal text-sm z-50">
                       <li className="border-b border-neutral-200">
                         <Link
-                          href="/beginners/ai-for-beginners"
+                          href="/beginners-guide/ai-for-beginners"
                           className="block px-4 py-2 hover:bg-neutral-100"
                         >
                           AI for Beginners
