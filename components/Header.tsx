@@ -17,19 +17,21 @@ import { HiOutlineMenu } from "react-icons/hi";
 
 const navLinks = [
   "Home",
-  "About",
-  "Tools",
-  "Courses",
-  "Upcoming",
-  "Jobs",
-  "Insights",
-  "Beginners",
-  "TopLists",
-  "Contact",
+  "About Us",
+  "AI Tools Finder",
+  "AI Course Finder",
+  "AI Future Releases",
+  "AI Job Portal",
+  "AI Insights",
+  "Beginners Guide",
+  "TopLists Rankings",
+  "Contact Us",
 ];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(""); // Desktop dropdown
+  const [mobileDropdown, setMobileDropdown] = useState(false); // Mobile dropdown
 
   return (
     <header className="sticky top-0 z-50 shadow-sm bg-white border-b border-neutral-200">
@@ -98,22 +100,60 @@ export default function Header() {
       {/* === Bottom Nav (Desktop) === */}
       <nav className="hidden md:block bg-blue-500">
         <div className="max-w-6xl mx-auto">
-          <ul className="flex justify-between text-white font-montserrat text-base">
+          <ul className="flex justify-between text-white font-montserrat text-base relative">
             {navLinks.map((link) => (
               <li
                 key={link}
-                className="flex-1 text-center border-r border-blue-400 last:border-none hover:bg-blue-600 transition-colors duration-300"
+                className="flex-1 text-center border-r border-blue-400 last:border-none hover:bg-blue-600 transition-colors duration-300 relative"
+                onMouseEnter={() =>
+                  link === "Beginners Guide" &&
+                  setOpenDropdown("Beginners Guide")
+                }
+                onMouseLeave={() => setOpenDropdown("")}
               >
-                <Link
-                  href={
-                    link === "Home"
-                      ? "/"
-                      : `/${link.toLowerCase().replace(/\s+/g, "-")}`
-                  }
-                  className="block px-4 py-3"
-                >
-                  {link}
-                </Link>
+                {/* NON-CLICKABLE BEGINNERS GUIDE */}
+                {link === "Beginners Guide" ? (
+                  <button
+                    className="w-full block px-4 py-3 cursor-pointer"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Beginners Guide
+                  </button>
+                ) : (
+                  <Link
+                    href={
+                      link === "Home"
+                        ? "/"
+                        : `/${link.toLowerCase().replace(/\s+/g, "-")}`
+                    }
+                    className="block px-4 py-3"
+                  >
+                    {link}
+                  </Link>
+                )}
+
+                {/* Desktop Dropdown */}
+                {link === "Beginners Guide" &&
+                  openDropdown === "Beginners Guide" && (
+                    <ul className="absolute left-0 w-full bg-white text-neutral-800 shadow-lg font-normal text-sm z-50">
+                      <li className="border-b border-neutral-200">
+                        <Link
+                          href="/beginners-guide/ai-for-beginners"
+                          className="block px-4 py-2 hover:bg-neutral-100"
+                        >
+                          AI for Beginners
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/beginners-guide/ai-for-students"
+                          className="block px-4 py-2 hover:bg-neutral-100"
+                        >
+                          AI for Students
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
               </li>
             ))}
           </ul>
@@ -147,6 +187,7 @@ export default function Header() {
             <IoClose />
           </button>
 
+          {/* Mobile Search */}
           <div className="relative mb-6">
             <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-500 text-sm" />
             <input
@@ -156,25 +197,61 @@ export default function Header() {
             />
           </div>
 
-          {/* Nav Links */}
+          {/* Mobile Nav Links */}
           <div className="flex flex-col space-y-2 font-inter">
             {navLinks.map((link) => (
-              <Link
-                key={link}
-                href={
-                  link === "Home"
-                    ? "/"
-                    : `/${link.toLowerCase().replace(/\s+/g, "-")}`
-                }
-                className="font-montserrat block text-neutral-800 font-medium px-2 py-2 rounded hover:bg-blue-100 transition"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link}
-              </Link>
+              <div key={link}>
+                {link !== "Beginners Guide" ? (
+                  <Link
+                    href={
+                      link === "Home"
+                        ? "/"
+                        : `/${link.toLowerCase().replace(/\s+/g, "-")}`
+                    }
+                    className="font-montserrat block text-neutral-800 font-medium px-2 py-2 rounded hover:bg-blue-100 transition"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link}
+                  </Link>
+                ) : (
+                  <>
+                    {/* Mobile Accordion */}
+                    <button
+                      className="w-full text-left font-montserrat text-neutral-800 font-medium px-2 py-2 rounded hover:bg-blue-100 transition flex justify-between items-center"
+                      onClick={() => setMobileDropdown(!mobileDropdown)}
+                    >
+                      Beginners Guide
+                      <span className="text-neutral-600">
+                        {mobileDropdown ? "−" : "+"}
+                      </span>
+                    </button>
+
+                    {mobileDropdown && (
+                      <div className="ml-3 mt-1 space-y-1 border-l border-neutral-300 pl-3">
+                        <Link
+                          href="/beginners/ai-for-beginners"
+                          className="block text-neutral-700 font-medium py-1 hover:bg-blue-50 rounded"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          AI for Beginners
+                        </Link>
+
+                        <Link
+                          href="/beginners/ai-for-students"
+                          className="block text-neutral-700 font-medium py-1 hover:bg-blue-50 rounded"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          AI for Students
+                        </Link>
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
             ))}
           </div>
 
-          {/* Social Icons */}
+          {/* Mobile Social Icons */}
           <div className="flex space-x-2 text-neutral-600 mt-auto pt-6 border-t border-neutral-200">
             {[
               <FaFacebookF size={14} />,
