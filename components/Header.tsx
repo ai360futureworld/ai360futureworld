@@ -229,7 +229,7 @@ export default function Header() {
                     {mobileDropdown && (
                       <div className="ml-3 mt-1 space-y-1 border-l border-neutral-300 pl-3">
                         <Link
-                          href="/beginners/ai-for-beginners"
+                          href="/beginners-guide/ai-for-beginners"
                           className="block text-neutral-700 font-medium py-1 hover:bg-blue-50 rounded"
                           onClick={() => setMobileOpen(false)}
                         >
@@ -237,7 +237,7 @@ export default function Header() {
                         </Link>
 
                         <Link
-                          href="/beginners/ai-for-students"
+                          href="/beginners-guide/ai-for-students"
                           className="block text-neutral-700 font-medium py-1 hover:bg-blue-50 rounded"
                           onClick={() => setMobileOpen(false)}
                         >
