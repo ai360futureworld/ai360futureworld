@@ -25,21 +25,20 @@ export default function GDPRNotice() {
           GDPR / Data Protection Notice
         </h1>
         <p className="font-inter text-gray-600 md:text-lg leading-relaxed">
-          Learn how AI 360 FUTURE protects personal data and complies with
-          global privacy standards.
+          How AI 360 FUTURE protects your personal data and complies with GDPR.
         </p>
       </div>
 
-      {/* === Content Section === */}
+      {/* === Content === */}
       <div className="max-w-4xl mx-auto px-6 pb-20">
-        <div className="bg-white border border-neutral-200 rounded-2xl shadow-sm p-8 space-y-10">
+        <div className="bg-white border border-neutral-200 rounded-2xl shadow-sm p-8 space-y-10 font-inter text-neutral-700">
           {/* Basic Info */}
-          <div className="text-neutral-600 font-inter space-y-2">
+          <div className="space-y-2">
             <p>
               <strong>GDPR / Data Protection Notice — AI 360 FUTURE</strong>
             </p>
             <p>
-              <strong>Effective Date:</strong> January 2025
+              <strong>Effective Date:</strong> November 2025
             </p>
             <p>
               <strong>Operated by:</strong> AI 360 FUTURE (Proprietorship,
@@ -50,242 +49,272 @@ export default function GDPRNotice() {
             </p>
           </div>
 
-          {/* Sections */}
+          {/* === Sections === */}
           {[
             {
-              title: "1. Introduction",
+              title: "1. Information We Collect",
               content: (
                 <>
                   <p>
-                    At AI 360 FUTURE, we are committed to protecting the privacy
-                    and personal data of our visitors and users worldwide.
+                    <strong>A) Data You Provide</strong>
                   </p>
-                  <p>
-                    This page outlines how we comply with global data protection
-                    standards — including the General Data Protection Regulation
-                    (GDPR) and the Indian IT Act 2000.
-                  </p>
-                  <p>
-                    Our goal is simple: to ensure transparency, trust, and full
-                    control over your personal data.
-                  </p>
-                </>
-              ),
-            },
-
-            {
-              title: "2. Current Website Mode",
-              content: (
-                <>
-                  <p>
-                    As of now, all sections of our website are available
-                    completely free of charge and do not require account
-                    creation or payment.
-                  </p>
-                  <p>
-                    We do <strong>not</strong> store, share, or sell any user
-                    data for financial purposes.
-                  </p>
-                  <p>Visitors may browse free content including:</p>
                   <ul className="list-disc list-inside">
-                    <li>AI Tools, Courses, and Jobs</li>
-                    <li>AI Technologies & Automation Hub</li>
-                    <li>Blog & Insights</li>
-                    <li>Beginners Guide</li>
-                    <li>Prompt Library (Free Access)</li>
-                  </ul>
-                  <p>
-                    No personal or financial information is collected unless a
-                    visitor voluntarily subscribes to our email updates.
-                  </p>
-                </>
-              ),
-            },
-
-            {
-              title: "3. Data We Collect (Voluntary Only)",
-              content: (
-                <>
-                  <p>
-                    AI 360 FUTURE collects data only when voluntarily submitted
-                    by the user.
-                  </p>
-                  <p>This includes:</p>
-                  <ul className="list-disc list-inside">
-                    <li>Email address (for newsletters or updates)</li>
+                    <li>Name (optional)</li>
+                    <li>Email (newsletter or contact forms)</li>
                     <li>
-                      Basic analytics data (device type, time spent, pages
-                      visited)
+                      Messages or inquiries submitted through contact forms
                     </li>
                   </ul>
-                  <p>
-                    We do not collect sensitive information such as financial
-                    data, passwords, IDs, or biometrics.
+
+                  <p className="mt-3">
+                    <strong>B) Data Collected Automatically</strong>
                   </p>
-                </>
-              ),
-            },
-
-            {
-              title: "4. Legal Basis for Data Processing (GDPR Requirement)",
-              content: (
-                <>
-                  <p>We process user data under the following lawful bases:</p>
+                  <p>(via Google Analytics / Plausible / similar tools)</p>
                   <ul className="list-disc list-inside">
-                    <li>
-                      <strong>Consent</strong> — when you subscribe to our
-                      emails.
-                    </li>
-                    <li>
-                      <strong>Legitimate Interest</strong> — improving site
-                      performance and user experience.
-                    </li>
-                    <li>
-                      <strong>Compliance</strong> — adhering to applicable local
-                      and international laws.
-                    </li>
+                    <li>Browser & device information</li>
+                    <li>IP address (anonymized where possible)</li>
+                    <li>Pages visited</li>
+                    <li>Time spent on website</li>
+                    <li>Click interactions</li>
                   </ul>
-                </>
-              ),
-            },
 
-            {
-              title: "5. How We Protect Your Data",
-              content: (
-                <>
-                  <p>
-                    We use industry-standard measures to ensure data safety:
+                  <p className="mt-3">
+                    <strong>C) Affiliate Interaction Data</strong>
                   </p>
                   <ul className="list-disc list-inside">
-                    <li>SSL encryption across the entire website</li>
+                    <li>Click count</li>
+                    <li>Redirect events</li>
+                    <li>Outbound link activity</li>
+                  </ul>
+
+                  <p className="mt-3 text-red-600 font-semibold">
+                    We do NOT collect payment or financial data.
+                  </p>
+                </>
+              ),
+            },
+
+            {
+              title: "2. Legal Basis for Processing",
+              content: (
+                <ul className="list-disc list-inside">
+                  <li>
+                    <strong>Consent</strong> → newsletters, cookies
+                  </li>
+                  <li>
+                    <strong>Legitimate Interest</strong> → analytics,
+                    performance improvement
+                  </li>
+                  <li>
+                    <strong>Contractual Need</strong> → when you contact us for
+                    support
+                  </li>
+                </ul>
+              ),
+            },
+
+            {
+              title: "3. How We Use Your Data",
+              content: (
+                <>
+                  <p>We use your information to:</p>
+                  <ul className="list-disc list-inside">
+                    <li>Provide AI-related resources and content</li>
+                    <li>Improve website performance</li>
+                    <li>Analyse traffic and user behaviour</li>
+                    <li>Send monthly newsletters (only if subscribed)</li>
+                    <li>Respond to support or partnership requests</li>
+                    <li>Maintain affiliate tracking</li>
+                  </ul>
+                  <p className="text-red-600 font-semibold mt-3">
+                    We never sell your personal information.
+                  </p>
+                </>
+              ),
+            },
+
+            {
+              title: "4. Public Sections of AI 360 FUTURE",
+              content: (
+                <>
+                  <p>All visitors may freely access:</p>
+                  <ul className="list-disc list-inside">
+                    <li>AI Tools Directory</li>
+                    <li>AI Courses Finder</li>
+                    <li>AI Job Portal</li>
+                    <li>AI Technologies</li>
+                    <li>AI Automation Hub</li>
+                    <li>AI Beginners Guide</li>
+                    <li>AI News & Insights</li>
+                    <li>AI TopList Rankings</li>
+                    <li>AI Prompt Library (Free Access)</li>
+                    <li>About Us, Contact, Sitemap, All Legal Pages</li>
+                  </ul>
+                  <p>No registration or payment required.</p>
+                </>
+              ),
+            },
+
+            {
+              title: "5. Cookies & Tracking",
+              content: (
+                <>
+                  <p>We use:</p>
+                  <ul className="list-disc list-inside">
+                    <li>Essential cookies (site functioning)</li>
+                    <li>Optional analytics cookies</li>
+                  </ul>
+                  <p>Users may decline optional cookies anytime.</p>
+                </>
+              ),
+            },
+
+            {
+              title: "6. Data Sharing",
+              content: (
+                <>
+                  <p>We may share anonymous / non-identifiable data with:</p>
+                  <ul className="list-disc list-inside">
+                    <li>Analytics providers</li>
+                    <li>Hosting platform (Vercel)</li>
+                    <li>Email services (Brevo / Zoho / equivalent)</li>
                     <li>
-                      No storage of financial or sensitive user information
-                    </li>
-                    <li>Secure servers and anti-malware monitoring</li>
-                    <li>Regular audits for performance and security</li>
-                  </ul>
-                  <p>
-                    All data is handled according to GDPR and Indian IT Act 2000
-                    requirements.
-                  </p>
-                </>
-              ),
-            },
-
-            {
-              title: "6. Your Rights Under GDPR",
-              content: (
-                <>
-                  <p>
-                    All EU and international users have the following rights:
-                  </p>
-                  <ul className="list-disc list-inside">
-                    <li>Right to Access — request a copy of your data</li>
-                    <li>Right to Rectification — correct incorrect data</li>
-                    <li>Right to Deletion — request your data be erased</li>
-                    <li>Right to Restrict Processing</li>
-                    <li>Right to Data Portability</li>
-                    <li>Right to Withdraw Consent at any time</li>
-                  </ul>
-                  <p>
-                    To exercise any of these rights, contact us using the
-                    details below.
-                  </p>
-                </>
-              ),
-            },
-
-            {
-              title: "7. Cookies & Tracking",
-              content: (
-                <>
-                  <p>
-                    We use cookies purely for analytics and performance
-                    optimization.
-                  </p>
-                  <p>
-                    Cookies do not store personal information and can be
-                    disabled through browser settings.
-                  </p>
-                  <p>
-                    For full details, please read our{" "}
-                    <strong>Cookie Policy</strong>.
-                  </p>
-                </>
-              ),
-            },
-
-            {
-              title: "8. Data Sharing & Third Parties",
-              content: (
-                <>
-                  <p>AI 360 FUTURE does not sell or rent any personal data.</p>
-                  <p>We may use trusted third-party tools like:</p>
-                  <ul className="list-disc list-inside">
-                    <li>Google Analytics</li>
-                    <li>Email service providers</li>
-                  </ul>
-                  <p>
-                    These services only receive anonymized or limited data and
-                    follow their own privacy policies.
-                  </p>
-                </>
-              ),
-            },
-
-            {
-              title: "9. Future Paid Plans & Data Handling",
-              content: (
-                <>
-                  <p>
-                    If AI 360 FUTURE introduces paid subscriptions in the
-                    future:
-                  </p>
-                  <ul className="list-disc list-inside">
-                    <li>All data handling details will be updated</li>
-                    <li>Users will be informed before any policy change</li>
-                    <li>
-                      Secure payment gateways will process all transactions
+                      Verified affiliate networks (Impact, CJ, ShareASale, etc.)
                     </li>
                   </ul>
-                  <p>No financial data will ever be stored by us.</p>
+                  <p className="text-red-600 font-semibold">
+                    We do NOT share personal data with advertisers.
+                  </p>
                 </>
               ),
             },
 
             {
-              title: "10. Contact Information",
+              title: "7. Data Retention",
+              content: (
+                <ul className="list-disc list-inside">
+                  <li>Newsletter emails → until you unsubscribe</li>
+                  <li>Contact form messages → 12 months</li>
+                  <li>Analytics data → anonymized & temporary</li>
+                </ul>
+              ),
+            },
+
+            {
+              title: "8. Your GDPR Rights",
               content: (
                 <>
+                  <p>You may request:</p>
+                  <ul className="list-disc list-inside">
+                    <li>Access to your data</li>
+                    <li>Correction of your data</li>
+                    <li>Deletion of your data</li>
+                    <li>Restriction of processing</li>
+                    <li>Withdrawal of consent</li>
+                    <li>Export of your information</li>
+                  </ul>
                   <p>
-                    For GDPR requests, privacy concerns, or data removal, please
-                    contact:
+                    Send requests to: <strong>info@ai360futureworld.com</strong>
                   </p>
-                  <p>
-                    AI 360 FUTURE
+                </>
+              ),
+            },
+
+            {
+              title: "9. Email Communication Policy",
+              content: (
+                <>
+                  <p>We send:</p>
+                  <ul className="list-disc list-inside">
+                    <li>Monthly newsletter</li>
+                    <li>Important updates</li>
+                    <li>Optional alerts (only if subscribed)</li>
+                  </ul>
+                  <p>You may unsubscribe anytime.</p>
+                </>
+              ),
+            },
+
+            {
+              title: "10. Children's Privacy",
+              content: (
+                <>
+                  <p>This website is not for users under 13.</p>
+                  <p>We do not knowingly collect children's data.</p>
+                </>
+              ),
+            },
+
+            {
+              title: "11. International Data Transfer",
+              content: (
+                <>
+                  <p>Your data may be processed in:</p>
+                  <ul className="list-disc list-inside">
+                    <li>India</li>
+                    <li>US</li>
+                    <li>Singapore</li>
+                  </ul>
+                  <p>All services follow secure data standards.</p>
+                </>
+              ),
+            },
+
+            {
+              title: "12. Updates to This Notice",
+              content: (
+                <p>
+                  We may update this notice periodically. Updated versions will
+                  have a new “Last Updated” date.
+                </p>
+              ),
+            },
+
+            {
+              title: "13. Contact Information",
+              content: (
+                <>
+                  <p>For GDPR, privacy, or data deletion requests:</p>
+                  <p>info@ai360futureworld.com</p>
+
+                  <p className="mt-3">
+                    For technical support:
                     <br />
-                    Proprietorship Registered in India
-                    <br />
-                    Email: info@ai360futureworld.com
-                    <br />
-                    Website: www.ai360futureworld.com
+                    support@ai360futureworld.com
                   </p>
                   <p>
-                    ©2025 AI 360 FUTURE — All Rights Reserved. Data is protected
-                    under GDPR, Indian IT Act 2000, and international privacy
-                    frameworks.
+                    For partnerships:
+                    <br />
+                    partners@ai360futureworld.com
                   </p>
+                  <p>
+                    For media queries:
+                    <br />
+                    media@ai360futureworld.com
+                  </p>
+                </>
+              ),
+            },
+
+            {
+              title: "14. Data Controller Details",
+              content: (
+                <>
+                  <p>
+                    <strong>AI 360 FUTURE</strong>
+                  </p>
+                  <p>Proprietorship Registered in India</p>
+                  <p>Website: www.ai360futureworld.com</p>
+                  <p>Email: info@ai360futureworld.com</p>
                 </>
               ),
             },
           ].map((section, idx) => (
-            <div key={idx} className="font-inter">
+            <div key={idx}>
               <h2 className="text-2xl font-semibold text-blue-600 font-montserrat mb-3">
                 {section.title}
               </h2>
-              <div className="space-y-3 text-neutral-700">
-                {section.content}
-              </div>
+              <div className="space-y-3">{section.content}</div>
             </div>
           ))}
         </div>
