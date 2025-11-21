@@ -3,16 +3,17 @@
 import {
   FaEye,
   FaGlobe,
-  FaArrowUp,
-  FaHeart,
   FaTelegramPlane,
   FaBookOpen,
   FaEnvelope,
-  FaMapMarkerAlt,
   FaBullseye,
-  FaHandshake,
-  FaLightbulb,
 } from "react-icons/fa";
+import {
+  FaBookOpenReader,
+  FaHandshakeSimple,
+  FaRegEye,
+  FaRegLightbulb,
+} from "react-icons/fa6";
 
 export default function AboutPage() {
   return (
@@ -26,13 +27,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg md:text-xl text-neutral-600 mb-6 font-inter animate-slideUp">
             Building smarter connections between knowledge, technology, and
-            opportunity.
-          </p>
-          <p className="text-neutral-600 leading-relaxed font-inter text-base md:text-lg animate-slideUp delay-200">
-            AI 360 Future is a global platform designed to simplify the way the
-            world learns AI. From intelligent tools to learning resources and
-            real-world insights, we connect people to what truly matters —
-            growth, capability, and the future of digital learning.
+            opportunity through Al tools, courses, jobs, and the future of
+            digital learning.
           </p>
 
           {/* CTA Button */}
@@ -58,19 +54,18 @@ export default function AboutPage() {
           <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2 animate-slideUp">
             <div className="flex justify-center mb-8 relative">
               <div className="absolute w-24 h-24 bg-blue-100 rounded-full blur-xl opacity-70"></div>
-              <div className="text-blue-500 text-6xl relative animate-float-slow">
+              <div className="text-blue-500 text-6xl relative">
                 <FaGlobe />
               </div>
             </div>
             <h3 className="text-2xl font-montserrat font-semibold mb-4">
-              Simplifying the way the world learns AI.
+              Our Mission
             </h3>
             <p className="text-neutral-600 leading-relaxed font-inter text-base">
-              Our mission is to make artificial intelligence accessible,
-              practical, and meaningful for everyone. We aim to bridge the gap
-              between technology and learning — helping people acquire real
-              skills, apply intelligent tools, and grow with confidence in the
-              digital age.
+              Simplifying Al for everyone. We make artificial intelligence
+              accessible,practical, and actionable. We bridge the gap between
+              technology and learning, empowering people with real-world skills
+              and the confidence to apply them.
             </p>
           </div>
 
@@ -78,18 +73,18 @@ export default function AboutPage() {
           <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2 animate-slideUp delay-200">
             <div className="flex justify-center mb-8 relative">
               <div className="absolute w-24 h-24 bg-blue-100 rounded-full blur-xl opacity-70"></div>
-              <div className="text-blue-500 text-6xl relative animate-float-slow">
+              <div className="text-blue-500 text-6xl relative">
                 <FaBullseye />
               </div>
             </div>
             <h3 className="text-2xl font-montserrat font-semibold mb-4">
-              Shaping a world where intelligence and opportunity move together.
+              Our Vision
             </h3>
             <p className="text-neutral-600 leading-relaxed font-inter text-base">
-              We envision a future where knowledge is open, technology is
-              responsible, and every learner — from any corner of the world —
-              can develop real skills, create value, and lead confidently in the
-              era of AI.
+              Advancing Al for every opportunity. We envision a future where
+              intelligent tools and open knowledge create new possibilities .A
+              world where every learner can build meaningful skills, create
+              value, and lead with confidence.
             </p>
           </div>
         </div>
@@ -138,24 +133,24 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
           {[
             {
-              icon: <FaHandshake />,
+              icon: <FaHandshakeSimple />,
               title: "Collaboration",
-              text: "Working together to achieve shared goals. We foster partnerships and teamwork to make AI education accessible to all.",
+              text: "Building together, growing together. We believe the best solutions emerge from partnership.We work side-byside with learners and communities to make Al accessible to all.",
             },
             {
-              icon: <FaLightbulb />,
+              icon: <FaRegLightbulb />,
               title: "Innovation",
-              text: "Driving creativity and new ideas. We encourage thinking outside the box and advancing AI learning through novel approaches.",
+              text: "Pioneering smarter paths forward. We challenge the status quo to advance Al learning.We embrace creative thinking and novel approaches that push the boundaries of education.",
             },
             {
-              icon: <FaEye />,
+              icon: <FaRegEye />,
               title: "Transparency",
-              text: "Clarity in every step. Integrity in every action. We operate with honesty to ensure AI education is trustworthy.",
+              text: "Clarity in action, honesty in intent. We operate with unwavering integrity and open communication.We build trust by making every process and principle clear and understandable.",
             },
             {
-              icon: <FaBookOpen />,
+              icon: <FaBookOpenReader />,
               title: "Knowledge",
-              text: "Empowering through learning. We make information accessible and practical for real-world application of AI.",
+              text: "Turning knowledge into meaningful action. We equip learners with practical, real-world Al skills. We enable real growth and confident use of knowledge.",
             },
           ].map((value, i) => (
             <div
@@ -164,9 +159,7 @@ export default function AboutPage() {
               style={{ animationDelay: `${i * 150}ms` }}
             >
               <div className="flex justify-center mb-6">
-                <div className="text-blue-500 text-5xl animate-float">
-                  {value.icon}
-                </div>
+                <div className="text-blue-500 text-5xl">{value.icon}</div>
               </div>
               <h3 className="font-montserrat text-xl font-semibold mb-3 text-neutral-900">
                 {value.title}
@@ -218,8 +211,8 @@ export default function AboutPage() {
             Join Our Community
           </h2>
           <p className="text-neutral-600 animate-slideUp font-inter">
-            Connect with a global network of AI learners, professionals, and
-            creators.
+            Connect with a global network of Al enthusiasts. Share insights,get
+            help, and collaborate on projects.
           </p>
         </div>
 
@@ -229,18 +222,18 @@ export default function AboutPage() {
               icon: <FaTelegramPlane />,
               title: "Join Our Telegram",
               text: "Connect with AI enthusiasts worldwide on Telegram. Get instant updates, insights, and early access to new AI tools - all in one community.",
-              btn: "Join Telegram",
+              btn: "Join Our Telegram",
             },
             {
               icon: <FaBookOpen />,
               title: "Learn & Grow",
-              text: "Sharpen your skills with practical AI knowledge. Discover tools, guides, and real examples that help you grow smarter every day.",
+              text: "Master Al with practical guides and real-world examples. Discover powerful tools and step-by-step tutorials.",
               btn: "View Learning Hub",
             },
             {
               icon: <FaEnvelope />,
               title: "Stay Updated",
-              text: "Never miss what’s next in AI. Get daily highlights, trends, and opportunities delivered straight to your inbox - stay ahead in the world of AI every day.",
+              text: "Get the latest Al trends and news delivered daily. Never miss an update on new tools and opportunities.",
               btn: "Join Newsletter",
             },
           ].map((card, i) => (
@@ -249,9 +242,7 @@ export default function AboutPage() {
               className="bg-white border border-neutral-200 p-8 rounded-2xl shadow hover:shadow-lg transition-transform hover:-translate-y-2 animate-slideUp text-center"
             >
               <div className="flex justify-center items-center mb-6">
-                <div className="text-blue-500 text-5xl animate-float">
-                  {card.icon}
-                </div>
+                <div className="text-blue-500 text-5xl">{card.icon}</div>
               </div>
               <h3 className="font-montserrat text-xl font-semibold mb-2">
                 {card.title}
