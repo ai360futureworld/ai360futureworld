@@ -9,22 +9,21 @@ import {
   FaLinkedin,
   FaYoutube,
   FaTelegramPlane,
-  FaTwitter,
   FaSearch,
 } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineMenu } from "react-icons/hi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const navLinks = [
   "Home",
   "About Us",
-  "AI Tools Finder",
-  "AI Course Finder",
-  "AI Future Releases",
+  "AI Tools Directory Page",
+  "AI Courses Finder",
   "AI Job Portal",
   "AI Insights",
   "Beginners Guide",
-  "TopLists Rankings",
+  "AI TopLists Rankings",
   "Contact Us",
 ];
 
@@ -75,7 +74,7 @@ export default function Header() {
             { icon: <FaInstagram size={14} />, color: "bg-pink-500" },
             { icon: <FaLinkedin size={14} />, color: "bg-blue-500" },
             { icon: <FaYoutube size={14} />, color: "bg-red-600" },
-            { icon: <FaTwitter size={14} />, color: "bg-sky-400" },
+            { icon: <FaXTwitter size={14} />, color: "bg-gray-800" },
             { icon: <FaTelegramPlane size={14} />, color: "bg-blue-400" },
           ].map((item, i) => (
             <a
@@ -258,7 +257,7 @@ export default function Header() {
               <FaInstagram size={14} />,
               <FaLinkedin size={14} />,
               <FaYoutube size={14} />,
-              <FaTwitter size={14} />,
+              <FaXTwitter size={14} />,
               <FaTelegramPlane size={14} />,
             ].map((icon, i) => (
               <a

@@ -101,7 +101,7 @@ export default function Disclaimer() {
                 <>
                   <p>
                     AI 360 FUTURE often lists or reviews external tools,
-                    software, and courses. However, we:
+                    software, jobs and courses. However, we:
                   </p>
                   <ul className="list-disc list-inside">
                     <li>Do not own or control these third-party platforms.</li>

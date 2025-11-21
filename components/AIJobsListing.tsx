@@ -62,10 +62,10 @@ export default function AIJobsListing() {
 
         {/* Navigation Arrows */}
         <div className="flex justify-center gap-6 mt-8">
-          <button className="prev-btn bg-neutral-50 border border-gray-200 p-3 rounded-full shadow-sm hover:bg-blue-50 hover:shadow-md transition">
+          <button className="prev-btn bg-blue-100 border border-gray-200 p-3 rounded-full shadow-sm hover:bg-blue-200 hover:shadow-md transition">
             &#8592;
           </button>
-          <button className="next-btn bg-neutral-50 border border-gray-200 p-3 rounded-full shadow-sm hover:bg-blue-50 hover:shadow-md transition">
+          <button className="next-btn bg-blue-100 border border-gray-200 p-3 rounded-full shadow-sm hover:bg-blue-200 hover:shadow-md transition">
             &#8594;
           </button>
         </div>

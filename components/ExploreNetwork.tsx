@@ -1,50 +1,63 @@
 "use client";
 
 import {
-  FaTools,
   FaBookOpen,
   FaBriefcase,
   FaRobot,
-  FaCogs,
   FaUserGraduate,
-} from "react-icons/fa";
+  FaRankingStar,
+  FaKeyboard,
+  FaGears,
+  FaScrewdriverWrench,
+} from "react-icons/fa6"; // updated to fa6 for newest icons
 
 const cards = [
   {
-    icon: <FaTools size={40} className="text-blue-500" />,
-    title: "AI Tools",
+    icon: <FaScrewdriverWrench size={40} className="text-blue-500" />,
+    title: "AI Tools Directory",
     description:
-      "Discover the latest AI-powered tools designed to boost productivity and creativity.",
+      "Explore the largest directory of AI tools across all industries and use-cases.",
   },
   {
     icon: <FaBookOpen size={40} className="text-blue-500" />,
-    title: "AI Courses",
+    title: "AI Courses Finder",
     description:
-      "Upskill with structured AI learning paths created by experts worldwide.",
+      "Find the best AI courses and learning paths curated from global experts.",
   },
   {
     icon: <FaBriefcase size={40} className="text-blue-500" />,
-    title: "AI Jobs",
+    title: "AI Job Portal",
     description:
-      "Explore AI career opportunities across startups, enterprises, and research.",
+      "Discover AI and tech jobs across remote, hybrid, and global companies.",
   },
   {
     icon: <FaRobot size={40} className="text-blue-500" />,
     title: "AI Technologies",
     description:
-      "Stay ahead with cutting-edge advancements in machine learning and automation.",
+      "Dive into the latest innovations shaping the future of machine intelligence.",
   },
   {
-    icon: <FaCogs size={40} className="text-blue-500" />,
+    icon: <FaGears size={40} className="text-blue-500" />,
     title: "AI Automation Hub",
     description:
-      "Connect automation tools that streamline processes and workflows effortlessly.",
+      "Access workflows and automation tools designed to scale productivity.",
   },
   {
     icon: <FaUserGraduate size={40} className="text-blue-500" />,
     title: "Beginner’s Guide",
     description:
-      "Start your AI journey with beginner-friendly tutorials and guides.",
+      "Start your AI journey with beginner-friendly tutorials, tips, and roadmaps.",
+  },
+  {
+    icon: <FaRankingStar size={40} className="text-blue-500" />,
+    title: "AI Toplist Rankings",
+    description: "Discover the top trending AI tools updated every week.",
+  },
+  {
+    icon: <FaKeyboard size={40} className="text-blue-500" />,
+    title: "AI Prompt Library",
+    description:
+      "Discover ready AI prompts tailored to boost workflow speed and quality.",
   },
 ];
 
@@ -57,12 +70,12 @@ export default function ExploreNetwork() {
           Explore the AI 360 Future Network
         </h2>
         <p className="font-inter text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-12">
-          Experience the world’s most powerful AI ecosystem - where innovation
-          meets opportunity.
+          Experience the world’s most powerful AI ecosystem — where innovation
+          meets opportunity.
         </p>
 
-        {/* === Cards Grid === */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* === Cards Grid (8 Cards, 4×2) === */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
             <div
               key={index}

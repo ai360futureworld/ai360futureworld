@@ -27,11 +27,11 @@ export default function AINewsBlog() {
         {/* === Section Heading === */}
         <div className="text-center mb-12">
           <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-neutral-900 mb-3">
-            AI Blog & Latest News
+            Artificial Intelligence News Spotlight
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
-            Explore insights, trends, and advancements shaping the future of
-            artificial intelligence.
+            Explore global Al updates, expert insights, and key trends reshaping
+            the digital world.
           </p>
         </div>
 

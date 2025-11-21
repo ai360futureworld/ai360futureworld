@@ -30,11 +30,11 @@ export default function UpcomingAITools() {
         {/* === Heading === */}
         <div className="text-center mb-12">
           <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-neutral-900 mb-3">
-            The Cutting Edge of AI - Tools Redefining Innovation
+            The Cutting Edge of Al - Tools Leading the Next Revolution
           </h2>
           <p className="font-inter text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
-            Move faster than the future - explore AI tools launching soon across
-            various industries.
+            Move faster than the future - discover advanced Al technologies
+            reshaping global industries.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function UpcomingAITools() {
             href="#"
             className="inline-flex items-center justify-center w-56 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold rounded-full transition duration-300"
           >
-            View More
+            Explore More
             <FaArrowRight className="ml-2 text-sm" />
           </a>
         </div>

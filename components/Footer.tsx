@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
   FaYoutube,
   FaTelegramPlane,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -58,7 +58,7 @@ export default function Footer() {
           { icon: FaInstagram, color: "bg-pink-500" },
           { icon: FaLinkedinIn, color: "bg-blue-500" },
           { icon: FaYoutube, color: "bg-red-600" },
-          { icon: FaTwitter, color: "bg-sky-400" },
+          { icon: FaXTwitter, color: "bg-gray-800" },
           { icon: FaTelegramPlane, color: "bg-blue-400" },
         ].map(({ icon: Icon, color }, idx) => (
           <a
