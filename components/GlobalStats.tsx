@@ -1,63 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {
-  FaGlobe,
-  FaTools,
-  FaBrain,
-  FaBriefcase,
-  FaGraduationCap,
-  FaChartLine,
-} from "react-icons/fa";
 
 const stats = [
+  { label: "AI Tools Across All Industries", value: 2500, suffix: "+" },
   {
-    id: 1,
-    number: 150,
+    label: "AI & Tech Courses from Global Platforms",
+    value: 200000,
     suffix: "+",
-    title: "Countries Reached",
-    desc: "Connecting learners and AI professionals worldwide.",
-    icon: <FaGlobe size={26} />,
   },
   {
-    id: 2,
-    number: 1100,
+    label: "Remote & Global Tech Jobs Updated Daily",
+    value: 1000000,
     suffix: "+",
-    title: "AI Tools Listed",
-    desc: "Curated collection of automation & productivity tools.",
-    icon: <FaTools size={26} />,
-  },
-  {
-    id: 3,
-    number: 100,
-    suffix: "+",
-    title: "AI Technologies Featured",
-    desc: "The latest trends shaping the future of AI.",
-    icon: <FaBrain size={26} />,
-  },
-  {
-    id: 4,
-    number: 1000,
-    suffix: "+",
-    title: "AI Jobs Available",
-    desc: "Opportunities from verified global employers.",
-    icon: <FaBriefcase size={26} />,
-  },
-  {
-    id: 5,
-    number: 500,
-    suffix: "+",
-    title: "AI Courses",
-    desc: "Learn AI from top educators and platforms worldwide.",
-    icon: <FaGraduationCap size={26} />,
-  },
-  {
-    id: 6,
-    number: 25,
-    suffix: "K+",
-    title: "Users & Growing",
-    desc: "Trusted by innovators, students, and creators globally.",
-    icon: <FaChartLine size={26} />,
   },
 ];
 
@@ -65,68 +20,70 @@ export default function GlobalStats() {
   const [counts, setCounts] = useState(stats.map(() => 0));
 
   useEffect(() => {
-    const duration = 2000;
-    const interval = 30;
-    const steps = duration / interval;
-    const newCounts = stats.map(() => 0);
+    const duration = 1500;
+    const interval = 20;
 
-    const timers = stats.map((stat, i) =>
-      setInterval(() => {
-        newCounts[i] += stat.number / steps;
-        if (newCounts[i] >= stat.number) {
-          newCounts[i] = stat.number;
-          clearInterval(timers[i]);
+    stats.forEach((stat, index) => {
+      let current = 0;
+      const increment = stat.value / (duration / interval);
+
+      const timer = setInterval(() => {
+        current += increment;
+
+        if (current >= stat.value) {
+          current = stat.value;
+          clearInterval(timer);
         }
-        setCounts([...newCounts]);
-      }, interval)
-    );
 
-    return () => timers.forEach((t) => clearInterval(t));
+        setCounts((prev) => {
+          const updated = [...prev];
+          updated[index] = Math.floor(current);
+          return updated;
+        });
+      }, interval);
+    });
   }, []);
 
   return (
-    <section className="bg-white py-20 border-t border-neutral-200">
+    <section className="py-20 px-6 bg-white border-t border-neutral-200 overflow-hidden">
       {/* Heading */}
-      <div className="text-center mb-12 max-w-6xl mx-auto px-6">
+      <div className="text-center mb-12 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold font-montserrat text-neutral-900">
-          Global Reach & Impact
+          Global Statistics
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
-          AI 360 Future brings together the world’s brightest minds - uniting
-          technology, talent, and transformation.
+          Updated daily across tools, courses, and global job markets
         </p>
       </div>
 
-      {/* Stats Grid */}
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {stats.map((stat, i) => (
+      {/* Grid Layout Same as AITechOverview */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {stats.map((stat, idx) => (
           <div
-            key={stat.id}
-            className="flex flex-col items-center justify-center bg-white border border-neutral-200 shadow-sm rounded-2xl p-8 hover:shadow-md transition"
+            key={idx}
+            className="p-6 bg-neutral-50 border border-gray-100 rounded-2xl shadow-sm 
+                       hover:bg-blue-50 hover:shadow-md transition ease-in-out duration-300
+                       flex flex-col items-center text-center"
           >
-            {/* Icon */}
-            <div className="bg-blue-500 text-white p-3 rounded-full mb-4 flex items-center justify-center">
-              {stat.icon}
-            </div>
-
-            {/* Counter */}
-            <h3 className="text-3xl font-bold text-neutral-800 font-montserrat">
-              {Math.floor(counts[i])}
+            {/* Number Counter */}
+            <p className="text-4xl md:text-5xl font-extrabold text-blue-600 font-montserrat">
+              {counts[idx].toLocaleString()}
               {stat.suffix}
+            </p>
+
+            {/* Label */}
+            <h3 className="text-lg font-bold font-montserrat text-neutral-800 mt-3">
+              {stat.label}
             </h3>
-
-            {/* Title */}
-            <p className="mt-2 text-lg font-semibold text-neutral-800 text-center">
-              {stat.title}
-            </p>
-
-            {/* Description */}
-            <p className="mt-1 text-sm text-neutral-500 text-center max-w-[220px]">
-              {stat.desc}
-            </p>
           </div>
         ))}
       </div>
+
+      {/* Data Source */}
+      <p className="mt-10 text-center text-neutral-500 text-sm font-inter">
+        Data updated daily via Udemy • Coursera • edX • Jooble • Talent.com •
+        Adzuna
+      </p>
     </section>
   );
 }

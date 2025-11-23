@@ -23,10 +23,10 @@ export default function AITechOverview() {
     <section className="py-20 px-6 bg-white border-t border-neutral-200 overflow-hidden">
       <div className="text-center mb-12 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold font-montserrat text-neutral-900">
-          Al Technologies Overview
+          Explore the Core Technologies Powering the Future of AI
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
-          Explore the key Al fields changing the world today
+          Understand major AI branches including ML, NLP, Robotics, Vision etc.
         </p>
       </div>
 
@@ -44,6 +44,10 @@ export default function AITechOverview() {
           </div>
         ))}
       </div>
+      {/* Footer */}
+      <p className="mt-10 text-center text-neutral-500 text-sm font-inter">
+        Content updated regularly to match industry trends.
+      </p>
     </section>
   );
 }

@@ -8,6 +8,7 @@ export default function NewsletterSection() {
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
+
     if (email.trim()) {
       alert(`Subscribed with ${email}`);
       setEmail("");
@@ -15,15 +16,15 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section className="bg-white py-20 border-t border-neutral-200">
+    <section className="bg-white py-20 border-t border-neutral-200 overflow-hidden">
       <div className="max-w-3xl mx-auto text-center px-6">
         {/* === Heading === */}
         <h2 className="text-3xl md:text-4xl font-extrabold font-montserrat text-neutral-900">
-          Stay Updated - Get Latest AI Tools & News Weekly
+          Stay Updated — Get the Latest AI Tools, Courses & Job Alerts Weekly
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-neutral-600 font-inter">
-          Join thousands of AI enthusiasts and never miss an update.
+          Join thousands of AI learners, professionals, founders.
         </p>
 
         {/* === Form === */}
@@ -37,16 +38,26 @@ export default function NewsletterSection() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
-            className="w-full sm:w-2/3 px-5 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-blue-500 font-inter text-neutral-800 placeholder:text-neutral-400"
+            className="w-full sm:w-2/3 px-5 py-3 rounded-xl border border-neutral-300 
+                       focus:outline-none focus:ring-2 focus:ring-blue-400 
+                       font-inter text-neutral-800 placeholder:text-neutral-400"
           />
+
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 text-white font-semibold rounded-xl hover:bg-blue-700 transition font-inter"
+            className="flex items-center justify-center gap-2 px-6 py-3 
+                       bg-blue-500 hover:bg-blue-400 text-white font-semibold 
+                       rounded-xl transition font-inter"
           >
-            <FaPaperPlane />
+            <FaPaperPlane className="text-sm" />
             Subscribe
           </button>
         </form>
+
+        {/* === Note === */}
+        <p className="mt-4 text-neutral-500 text-sm font-inter">
+          No spam. Unsubscribe anytime.
+        </p>
       </div>
     </section>
   );
