@@ -45,7 +45,7 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-gray-600 text-lg md:text-xl mt-6 font-inter max-w-xl">
+          <p className="text-gray-600 text-base mt-6 font-inter">
             Explore the global ecosystem of AI tools, technologies, courses,
             jobs, and insights empowering learners, professionals, and
             businesses worldwide.
@@ -56,14 +56,14 @@ const HeroSection = () => {
               href="#tools"
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-sm transition duration-200"
             >
-              Browse AI Tools
+              Explore Al Tools
             </Link>
 
             <Link
               href="#newsletter"
               className="border border-blue-500 text-blue-600 hover:bg-blue-50 font-semibold px-6 py-3 rounded-full transition duration-200"
             >
-              Get Weekly AI Insights
+              Start Learning Al
             </Link>
           </div>
         </div>

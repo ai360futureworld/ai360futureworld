@@ -1,43 +1,20 @@
 "use client";
 
-import { FaBriefcase, FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
+import { FaBriefcase, FaMapMarkerAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 const jobs = [
-  {
-    title: "AI Engineer",
-    company: "TechCorp",
-    location: "Remote",
-  },
-  {
-    title: "ML Expert",
-    company: "DeepAI",
-    location: "USA • Hybrid",
-  },
-  {
-    title: "Data Lead",
-    company: "DataLab",
-    location: "UK • Remote",
-  },
-  {
-    title: "AI Manager",
-    company: "InnovateX",
-    location: "Canada",
-  },
-  {
-    title: "Vision Eng.",
-    company: "VisionTech",
-    location: "Germany",
-  },
-  {
-    title: "AI Analyst",
-    company: "InsightAI",
-    location: "India • Remote",
-  },
+  { title: "AI Engineer", company: "TechCorp", location: "Remote" },
+  { title: "ML Expert", company: "DeepAI", location: "USA • Hybrid" },
+  { title: "Data Lead", company: "DataLab", location: "UK • Remote" },
+  { title: "AI Manager", company: "InnovateX", location: "Canada" },
+  { title: "Vision Eng.", company: "VisionTech", location: "Germany" },
+  { title: "AI Analyst", company: "InsightAI", location: "India • Remote" },
 ];
 
 export default function AIJobsListing() {
@@ -70,8 +47,8 @@ export default function AIJobsListing() {
             <SwiperSlide key={idx}>
               <div
                 className="h-full bg-white border border-neutral-200 rounded-2xl shadow-sm 
-                              hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 
-                              flex flex-col justify-between"
+                           hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 
+                           flex flex-col justify-between"
               >
                 {/* Icon + Text */}
                 <div className="flex items-center gap-3">
@@ -94,17 +71,6 @@ export default function AIJobsListing() {
                   <FaMapMarkerAlt className="text-blue-400" />
                   {job.location}
                 </div>
-
-                {/* Apply Button */}
-                <a
-                  href="#"
-                  className="mt-6 inline-flex items-center justify-center w-full px-4 py-2 
-                             bg-blue-500 hover:bg-blue-400 text-white font-inter font-semibold 
-                             rounded-xl transition duration-300"
-                >
-                  Apply
-                  <FaArrowRight className="ml-2 text-sm" />
-                </a>
               </div>
             </SwiperSlide>
           ))}
@@ -114,23 +80,34 @@ export default function AIJobsListing() {
         <div className="flex justify-center gap-6 mt-8">
           <button
             className="prev-btn bg-blue-100 border border-neutral-300 p-3 rounded-full shadow-sm 
-                             hover:bg-blue-200 transition"
+                       hover:bg-blue-200 transition"
           >
             ←
           </button>
           <button
             className="next-btn bg-blue-100 border border-neutral-300 p-3 rounded-full shadow-sm 
-                             hover:bg-blue-200 transition"
+                       hover:bg-blue-200 transition"
           >
             →
           </button>
         </div>
       </div>
 
+      {/* CTA Button */}
+      <div className="text-center mt-12">
+        <Link
+          href="/technologies"
+          className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white 
+                     rounded-full text-sm font-semibold transition"
+        >
+          View Job Details
+        </Link>
+      </div>
+
       {/* Footer */}
       <p className="mt-10 text-center text-neutral-500 text-sm font-inter">
-        Millions of jobs sourced from Jooble • Talent.com • Adzuna • Remotive •
-        FlexJobs
+        Job listings aggregated from Jooble, Talent.com, Adzuna, Remotive and
+        FlexJobs.
       </p>
     </section>
   );

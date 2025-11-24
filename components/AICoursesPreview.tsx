@@ -7,42 +7,42 @@ export default function AICoursesPreview() {
     {
       title: "Machine Learning A-Z™: Hands-On Python & R",
       platform: "Udemy",
-      price: "₹449",
+      label: "Certificate",
       rating: 4.7,
       image: "/courses/ml-az.webp",
     },
     {
       title: "Deep Learning Specialization",
       platform: "Coursera",
-      price: "Free + Certificate",
+      label: "Free + Certificate",
       rating: 4.9,
       image: "/courses/deep-learning.webp",
     },
     {
       title: "AI for Everyone",
       platform: "edX",
-      price: "₹6,999",
+      label: "Free",
       rating: 4.8,
       image: "/courses/ai-everyone.webp",
     },
     {
       title: "Generative AI with Python",
       platform: "LinkedIn Learning",
-      price: "Free for 1 month",
+      label: "Free for 1 Month",
       rating: 4.6,
       image: "/courses/gen-ai.webp",
     },
     {
       title: "AI Engineer Professional Certificate",
       platform: "Coursera",
-      price: "Paid",
+      label: "Certificate",
       rating: 4.8,
       image: "/courses/ai-engineer.webp",
     },
     {
       title: "ChatGPT Prompt Engineering",
       platform: "Udemy",
-      price: "₹349",
+      label: "Certificate",
       rating: 4.7,
       image: "/courses/prompt-engineering.webp",
     },
@@ -57,18 +57,17 @@ export default function AICoursesPreview() {
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
-          Learn from top universities, global experts, certified trainers with
-          real-time pricing & certificates.
+          Learn from top universities, global experts & certified trainers.
         </p>
       </div>
 
       {/* Course Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {courses.map((course, idx) => (
+        {courses.slice(0, 6).map((course, idx) => (
           <div
             key={idx}
             className="bg-white border border-neutral-200 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 
-                       transition-all duration-300 overflow-hidden"
+                       transition-all duration-300 overflow-hidden flex flex-col h-full"
           >
             {/* Image */}
             <div className="w-full h-44 bg-neutral-200 overflow-hidden">
@@ -81,34 +80,49 @@ export default function AICoursesPreview() {
             </div>
 
             {/* Content */}
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-1">
               <h3 className="text-lg font-bold font-montserrat text-neutral-900 leading-snug">
                 {course.title}
               </h3>
 
-              <div className="flex items-center gap-2 mt-3 text-sm text-gray-600 font-inter">
-                <FaBook className="text-blue-600" />
+              {/* Platform */}
+              <div className="flex items-center gap-2 mt-3 text-sm text-gray-700 font-inter">
+                <FaBook className="text-blue-500" />
                 <span className="font-semibold text-blue-600">
                   {course.platform}
                 </span>
               </div>
 
-              <p className="text-sm text-gray-600 mt-2 font-inter">
-                Price: <span className="font-semibold">{course.price}</span>
-              </p>
+              {/* Label */}
+              <span className="inline-block mt-3 px-3 py-1 text-xs font-semibold text-blue-600 bg-blue-50 rounded-full">
+                {course.label}
+              </span>
 
-              <div className="flex items-center gap-1 mt-2 text-sm font-inter text-gray-700">
+              {/* Rating */}
+              <div className="flex items-center gap-1 mt-3 text-sm font-inter text-gray-700">
                 <FaStar className="text-yellow-500" />
                 <span className="font-semibold">{course.rating}</span>
               </div>
+
+              {/* CTA Button (pushed to bottom) */}
+              <button className="mt-auto bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 rounded-lg transition">
+                View Course
+              </button>
             </div>
           </div>
         ))}
       </div>
 
+      {/* View All Courses */}
+      <div className="text-center mt-12">
+        <button className="px-6 py-3 bg-blue-500 text-white rounded-full text-sm font-semibold hover:bg-blue-600 transition">
+          View All Courses
+        </button>
+      </div>
+
       {/* Data Source */}
-      <p className="mt-14 text-center text-neutral-500 text-sm font-inter">
-        Updated daily via Udemy • Coursera • edX • LinkedIn Learning
+      <p className="mt-10 text-center text-neutral-500 text-sm font-inter">
+        Updated daily from Udemy • Coursera • edX • LinkedIn Learning
       </p>
     </section>
   );

@@ -20,11 +20,12 @@ export default function NewsletterSection() {
       <div className="max-w-3xl mx-auto text-center px-6">
         {/* === Heading === */}
         <h2 className="text-3xl md:text-4xl font-extrabold font-montserrat text-neutral-900">
-          Stay Updated — Get the Latest AI Tools, Courses & Job Alerts Weekly
+          Stay ahead in the world of AI tools, courses and job alerts every
+          week.
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-neutral-600 font-inter">
-          Join thousands of AI learners, professionals, founders.
+          Only useful updates. No spam.
         </p>
 
         {/* === Form === */}
@@ -46,18 +47,13 @@ export default function NewsletterSection() {
           <button
             type="submit"
             className="flex items-center justify-center gap-2 px-6 py-3 
-                       bg-blue-500 hover:bg-blue-400 text-white font-semibold 
+                       bg-blue-500 hover:bg-blue-600 text-white font-semibold 
                        rounded-xl transition font-inter"
           >
             <FaPaperPlane className="text-sm" />
-            Subscribe
+            Get Updates
           </button>
         </form>
-
-        {/* === Note === */}
-        <p className="mt-4 text-neutral-500 text-sm font-inter">
-          No spam. Unsubscribe anytime.
-        </p>
       </div>
     </section>
   );

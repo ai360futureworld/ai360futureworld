@@ -13,87 +13,102 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="bg-[#002b6f] text-neutral-300 pt-16 px-6">
-      {/* === 4 COLUMN GRID === */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-        {/* ================= COLUMN 1 — LOGO + TEXT + SOCIAL ================= */}
-        <div className="flex flex-col items-start">
+      {/* ========== 5 COLUMN LAYOUT ========== */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-14 mb-16">
+        {/* COLUMN 1 – LOGO + DESCRIPTION + SOCIAL */}
+        <div>
           <Image
             src="/logo.png"
             alt="AI 360 Future"
-            width={100}
+            width={110}
             height={60}
             className="object-contain mb-4"
           />
 
-          <p className="text-neutral-200 text-sm leading-relaxed mb-5 max-w-xs">
-            AI 360 FUTURE – Empowering the world with AI learning, tools and
-            opportunities.
+          <p className="text-neutral-200 text-sm leading-relaxed mb-6">
+            AI 360 FUTURE — A complete ecosystem of AI tools, courses, job
+            alerts and automation resources to help you stay ahead.
           </p>
 
           {/* SOCIAL ICONS */}
-          <div className="flex flex-wrap gap-3 mt-2">
+          <div className="flex gap-3 mt-3">
             {[
-              { icon: FaInstagram, color: "bg-pink-500" },
-              { icon: FaFacebookF, color: "bg-blue-600" },
-              { icon: FaYoutube, color: "bg-red-600" },
-              { icon: FaXTwitter, color: "bg-gray-800" },
-              { icon: FaLinkedinIn, color: "bg-blue-500" },
-              { icon: FaTelegramPlane, color: "bg-blue-400" },
-            ].map(({ icon: Icon, color }, idx) => (
+              FaInstagram,
+              FaFacebookF,
+              FaYoutube,
+              FaXTwitter,
+              FaLinkedinIn,
+              FaTelegramPlane,
+            ].map((Icon, idx) => (
               <a
                 key={idx}
                 href="#"
-                className={`flex items-center justify-center ${color} text-white w-8 h-8 rounded-md transition-transform duration-300 hover:scale-110 shadow-sm`}
+                className="flex items-center justify-center w-9 h-9 rounded-md bg-blue-600 
+                             hover:bg-blue-500 transition-transform duration-300 hover:scale-110"
               >
-                <Icon size={12} />
+                <Icon size={14} className="text-white" />
               </a>
             ))}
           </div>
         </div>
 
-        {/* ================= COLUMN 2 — TRUSTED ================= */}
+        {/* COLUMN 2 – PRODUCTS */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-4">
-            Trusted Platforms
-          </h3>
-
-          <ul className="text-neutral-200 text-sm leading-relaxed space-y-1">
-            <li>Udemy</li>
-            <li>Coursera</li>
-            <li>edX</li>
-            <li>Jooble</li>
-            <li>Talent.com</li>
-            <li>Adzuna</li>
-            <li>OpenAI</li>
-            <li>Hugging Face</li>
+          <h3 className="text-white text-lg font-semibold mb-4">Products</h3>
+          <ul className="space-y-2 text-sm text-neutral-200">
+            <li>AI Tools Directory</li>
+            <li>AI Courses Finder</li>
+            <li>AI Job Portal</li>
+            <li>Automation Hub</li>
+            <li>Playground</li>
+            <li>Prompt Library</li>
+            <li>Marketplace</li>
           </ul>
         </div>
 
-        {/* ================= COLUMN 3 — CONTACT ================= */}
+        {/* COLUMN 3 – RESOURCES */}
+        <div>
+          <h3 className="text-white text-lg font-semibold mb-4">Resources</h3>
+          <ul className="space-y-2 text-sm text-neutral-200">
+            <li>Beginners Guide</li>
+            <li>AI Insights</li>
+            <li>Toplists & Rankings</li>
+          </ul>
+        </div>
+
+        {/* COLUMN 4 – LEGAL */}
+        <div>
+          <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
+          <ul className="space-y-2 text-sm text-neutral-200">
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Refund & Cancellation Policy</li>
+            <li>Affiliate Disclosure</li>
+            <li>Cookie Policy</li>
+            <li>Disclaimer</li>
+          </ul>
+        </div>
+
+        {/* COLUMN 5 – CONTACT + NEWSLETTER */}
         <div>
           <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
 
-          <p className="text-neutral-200 text-sm mb-4">
-            <span className="font-semibold text-white">Support & Help:</span>
-            <br />
+          <p className="text-sm text-neutral-200 mb-4">
+            <span className="font-semibold text-white">Support:</span> <br />
             support@ai360futureworld.com
           </p>
 
-          <p className="text-neutral-200 text-sm">
-            <span className="font-semibold text-white">
-              Partnerships & Media:
-            </span>
+          <p className="text-sm text-neutral-200 mb-6">
+            <span className="font-semibold text-white">Partnerships:</span>{" "}
             <br />
             partners@ai360futureworld.com
           </p>
-        </div>
 
-        {/* ================= COLUMN 4 — NEWSLETTER ================= */}
-        <div>
-          <h3 className="text-white text-lg font-semibold mb-4">Newsletter</h3>
+          {/* NEWSLETTER */}
+          <h4 className="text-white text-lg font-semibold mb-3">Newsletter</h4>
 
-          <p className="text-neutral-200 text-sm mb-4">
-            Get a weekly email with AI tools, course discounts & job alerts.
+          <p className="text-neutral-200 text-sm mb-3">
+            Get weekly updates on AI tools, courses & job alerts.
           </p>
 
           <form className="flex flex-col gap-3">
@@ -106,29 +121,28 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-blue-500 hover:bg-blue-400 text-white font-semibold 
-                         rounded-lg transition shadow-sm"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold 
+                         rounded-lg transition"
             >
               Subscribe
             </button>
           </form>
 
-          <p className="text-neutral-300 text-xs mt-2">
-            No spam – unsubscribe anytime.
+          <p className="text-neutral-400 text-xs mt-2">
+            No spam — unsubscribe anytime.
           </p>
         </div>
       </div>
 
-      {/* ================= COPYRIGHT ================= */}
+      {/* DATA ATTRIBUTION */}
+      <div className="text-center text-neutral-300 text-xs max-w-4xl mx-auto pb-4 leading-relaxed">
+        Data & Integrations From: Udemy, Coursera, edX, LinkedIn Learning,
+        Jooble, Talent.com, Adzuna, OpenAI and others.
+      </div>
+
+      {/* COPYRIGHT */}
       <div className="border-t border-blue-800 pt-4 pb-6 text-sm text-neutral-300 text-center">
-        ©2025 AI 360 FUTURE – All rights reserved. Developed by{" "}
-        <a
-          href="https://www.appuncles.com"
-          className="text-sky-300 hover:text-sky-200 font-medium"
-          target="_blank"
-        >
-          AppUncles
-        </a>
+        © 2025 AI 360 FUTURE — All rights reserved.
       </div>
     </footer>
   );

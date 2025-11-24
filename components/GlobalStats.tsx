@@ -52,7 +52,7 @@ export default function GlobalStats() {
           Global Statistics
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
-          Updated daily across tools, courses, and global job markets
+          Updated daily across Al tools, courses and global job markets.
         </p>
       </div>
 
@@ -81,8 +81,8 @@ export default function GlobalStats() {
 
       {/* Data Source */}
       <p className="mt-10 text-center text-neutral-500 text-sm font-inter">
-        Data updated daily via Udemy • Coursera • edX • Jooble • Talent.com •
-        Adzuna
+        Data sourced daily from Udemy, Coursera, edX, Jooble, Talent.com and
+        Adzuna.
       </p>
     </section>
   );
