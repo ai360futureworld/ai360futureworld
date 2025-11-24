@@ -57,7 +57,8 @@ export default function AICoursesPreview() {
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
-          Learn from top universities, global experts & certified trainers.
+          Learn from top universities, global experts, and certified trainers
+          with real- time pricing & certificates.
         </p>
       </div>
 

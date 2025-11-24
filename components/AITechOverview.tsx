@@ -24,7 +24,7 @@ export default function AITechOverview() {
     <section className="py-20 px-6 bg-white border-t border-neutral-200 overflow-hidden">
       <div className="text-center mb-12 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold font-montserrat text-neutral-900">
-          Explore Core Fields of Artificial Intelligence
+          Explore the Core Fields of Artificial Intelligence
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-600 font-inter">
           Understand major AI branches including ML, NLP, Robotics, Vision etc.

@@ -20,12 +20,12 @@ export default function NewsletterSection() {
       <div className="max-w-3xl mx-auto text-center px-6">
         {/* === Heading === */}
         <h2 className="text-3xl md:text-4xl font-extrabold font-montserrat text-neutral-900">
-          Stay ahead in the world of AI tools, courses and job alerts every
-          week.
+          Stay ahead with the latest Al tools, courses, and global job alerts -
+          every week.
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-neutral-600 font-inter">
-          Only useful updates. No spam.
+          oin 10,000+ learners - one email per week. No spam ever.
         </p>
 
         {/* === Form === */}

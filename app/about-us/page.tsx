@@ -11,6 +11,7 @@ import {
 import {
   FaBookOpenReader,
   FaHandshakeSimple,
+  FaLocationDot,
   FaRegEye,
   FaRegLightbulb,
 } from "react-icons/fa6";
@@ -42,7 +43,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       {/* SECTION 2: MISSION & VISION */}
       <section className="py-24 bg-white text-center border-t border-neutral-200">
         <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-16 text-neutral-900 animate-fadeIn">
@@ -89,7 +89,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       {/* SECTION 3: MANIFESTO */}
       <section className="py-24 bg-white border-y border-neutral-200 text-center">
         <div className="max-w-5xl mx-auto px-6">
@@ -117,7 +116,6 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
       {/* SECTION 4: OUR CORE VALUES */}
       <section className="py-24 bg-white border-t border-neutral-200 text-neutral-800">
         <div className="text-center mb-14">
@@ -173,32 +171,150 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 5: GLOBAL PRESENCE */}
-      <section className="relative py-24 bg-gradient-to-b from-blue-200 to-white text-center overflow-hidden">
+      <section className="relative py-28 bg-gradient-to-b from-blue-200 via-blue-100 to-white text-center overflow-hidden">
         {/* Content */}
-        <div className="relative z-10 text-neutral-900 max-w-4xl mx-auto px-6">
-          {/* Top Icon */}
-          <div className="flex justify-center mb-6">
+        <div className="relative z-10 text-neutral-900 max-w-[850px] mx-auto px-6">
+          {/* Bigger Globe Animation */}
+          <div className="flex justify-center mb-10">
             <img
-              src="/globe.gif" // replace with your icon path
-              alt="AI Icon"
-              className="w-20 h-20 object-contain animate-fadeIn"
+              src="/globe.gif"
+              alt="Global AI Network"
+              className="w-60 object-contain animate-fadeIn"
             />
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4 animate-fadeIn">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-5 animate-fadeIn">
             Connected with 150+ Countries
           </h2>
-          <p className="text-neutral-700 mb-12 font-inter animate-slideUp text-lg md:text-xl">
-            From India to USA, from Europe to Africa, from Asia to Australia —
-            AI 360 Future connects innovators, creators, and learners worldwide.
+
+          <p className="text-neutral-700 mb-14 font-inter text-lg md:text-xl leading-relaxed animate-slideUp font-medium">
+            From India to USA, from Europe to Africa, and across Asia to
+            Australia —
+            <span className="font-semibold text-neutral-900">
+              {" "}
+              AI 360 Future
+            </span>
+            connects innovators, creators, and learners worldwide.
           </p>
 
-          {/* Image instead of Map */}
-          <div className="w-full max-w-5xl mx-auto">
+          {/* Map Image + React Icons Pins */}
+          <div className="relative w-full max-w-5xl mx-auto">
+            {/* Main Map (No shadow) */}
             <img
-              src="/global-map.png" // replace with your image path
+              src="/world-map.png"
               alt="Global Connections"
-              className="w-full h-auto object-cover animate-fadeIn"
+              className="w-full h-auto object-cover rounded-xl animate-fadeIn z-0"
+            />
+
+            {/* ===== Premium Gradient Map Pins (React Icons) ===== */}
+
+            {/* USA */}
+            <FaLocationDot
+              className="absolute top-[33%] left-[16%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* Canada */}
+            <FaLocationDot
+              className="absolute top-[25%] left-[12%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* Brazil */}
+            <FaLocationDot
+              className="absolute top-[70%] left-[32%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* UK */}
+            <FaLocationDot
+              className="absolute top-[26%] left-[60%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* Germany */}
+            <FaLocationDot
+              className="absolute top-[28%] left-[65%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* France */}
+            <FaLocationDot
+              className="absolute top-[25%] left-[75%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* Middle East */}
+            <FaLocationDot
+              className="absolute top-[35%] left-[55%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* India */}
+            <FaLocationDot
+              className="absolute top-[45%] left-[59%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* China */}
+            <FaLocationDot
+              className="absolute top-[40%] left-[68%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* Japan */}
+            <FaLocationDot
+              className="absolute top-[38%] left-[74%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* Australia */}
+            <FaLocationDot
+              className="absolute top-[75%] left-[85%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            {/* South Africa */}
+            <FaLocationDot
+              className="absolute top-[65%] left-[55%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+
+            <FaLocationDot
+              className="absolute top-[55%] left-[55%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
+            />
+            <FaLocationDot
+              className="absolute top-[50%] left-[45%] 
+             text-white drop-shadow-[0_0_6px_rgba(56,189,248,0.9)] 
+             animate-pulse"
+              style={{ fontSize: "26px" }}
             />
           </div>
         </div>
