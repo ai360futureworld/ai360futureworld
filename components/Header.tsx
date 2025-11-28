@@ -19,7 +19,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const navLinks = [
   "Home",
   "About Us",
-  "AI Tools Directory Page",
+  "AI Tools Directory",
   "AI Courses Finder",
   "AI Job Portal",
   "AI Insights",
