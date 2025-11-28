@@ -73,7 +73,7 @@ const HeroSection = () => {
           <img
             src="/hero/ai-illustration.jpg"
             alt="AI Illustration"
-            className="w-full max-w-md object-cover rounded-xl drop-shadow-xl"
+            className="w-full max-w-md object-cover rounded-xl "
             loading="lazy"
           />
         </div>

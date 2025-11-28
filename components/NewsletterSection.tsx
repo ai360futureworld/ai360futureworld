@@ -25,7 +25,7 @@ export default function NewsletterSection() {
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-neutral-600 font-inter">
-          oin 10,000+ learners - one email per week. No spam ever.
+          Join 10,000+ learners - one email per week. No spam ever.
         </p>
 
         {/* === Form === */}

@@ -1,20 +1,18 @@
 "use client";
 
+import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 import {
-  FaEye,
   FaGlobe,
   FaTelegramPlane,
   FaBookOpen,
   FaEnvelope,
   FaBullseye,
+  FaGraduationCap,
+  FaRegEnvelope,
 } from "react-icons/fa";
-import {
-  FaBookOpenReader,
-  FaHandshakeSimple,
-  FaLocationDot,
-  FaRegEye,
-  FaRegLightbulb,
-} from "react-icons/fa6";
+import { FaLocationDot, FaTelegram } from "react-icons/fa6";
+import { HiOutlineEye, HiOutlineUsers } from "react-icons/hi2";
+import { LuBrain, LuLightbulb } from "react-icons/lu";
 
 export default function AboutPage() {
   return (
@@ -36,7 +34,7 @@ export default function AboutPage() {
           <div className="mt-10 animate-fadeIn delay-300">
             <a
               href="#tools"
-              className="bg-blue-500 text-white font-inter px-8 py-3 rounded-xl shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300"
+              className="bg-blue-500 text-white font-inter px-8 py-3 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300"
             >
               Explore AI Tools
             </a>
@@ -131,22 +129,22 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
           {[
             {
-              icon: <FaHandshakeSimple />,
+              icon: <HiOutlineUsers />,
               title: "Collaboration",
               text: "Building together, growing together. We believe the best solutions emerge from partnership.We work side-byside with learners and communities to make Al accessible to all.",
             },
             {
-              icon: <FaRegLightbulb />,
+              icon: <LuLightbulb />,
               title: "Innovation",
               text: "Pioneering smarter paths forward. We challenge the status quo to advance Al learning.We embrace creative thinking and novel approaches that push the boundaries of education.",
             },
             {
-              icon: <FaRegEye />,
+              icon: <HiOutlineEye />,
               title: "Transparency",
               text: "Clarity in action, honesty in intent. We operate with unwavering integrity and open communication.We build trust by making every process and principle clear and understandable.",
             },
             {
-              icon: <FaBookOpenReader />,
+              icon: <LuBrain />,
               title: "Knowledge",
               text: "Turning knowledge into meaningful action. We equip learners with practical, real-world Al skills. We enable real growth and confident use of knowledge.",
             },
@@ -188,8 +186,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-neutral-700 mb-14 font-inter text-lg md:text-xl leading-relaxed animate-slideUp font-medium">
-            From India to USA, from Europe to Africa, and across Asia to
-            Australia —
+            From the USA to Europe, across Asia to Australia —
             <span className="font-semibold text-neutral-900">
               {" "}
               AI 360 Future
@@ -201,7 +198,7 @@ export default function AboutPage() {
           <div className="relative w-full max-w-5xl mx-auto">
             {/* Main Map (No shadow) */}
             <img
-              src="/world-map.png"
+              src="/world-map1.png"
               alt="Global Connections"
               className="w-full h-auto object-cover rounded-xl animate-fadeIn z-0"
             />
@@ -327,7 +324,7 @@ export default function AboutPage() {
             Join Our Community
           </h2>
           <p className="text-neutral-600 animate-slideUp font-inter">
-            Connect with a global network of Al enthusiasts. Share insights,get
+            Connect with a global network of AI enthusiasts. Share insights, get
             help, and collaborate on projects.
           </p>
         </div>
@@ -337,40 +334,47 @@ export default function AboutPage() {
             {
               icon: <FaTelegramPlane />,
               title: "Join Our Telegram",
-              text: "Connect with AI enthusiasts worldwide on Telegram. Get instant updates, insights, and early access to new AI tools - all in one community.",
+              text: "Connect with AI enthusiasts worldwide. Get exclusive insights, expert discussions and early access to AI tools.",
               btn: "Join Our Telegram",
             },
             {
-              icon: <FaBookOpen />,
+              icon: <FaGraduationCap />,
               title: "Learn & Grow",
-              text: "Master Al with practical guides and real-world examples. Discover powerful tools and step-by-step tutorials.",
+              text: "Master AI with structured tutorials, real-world examples and step-by-step learning paths.",
               btn: "View Learning Hub",
             },
             {
-              icon: <FaEnvelope />,
+              icon: <FaRegEnvelope />,
               title: "Stay Updated",
-              text: "Get the latest Al trends and news delivered daily. Never miss an update on new tools and opportunities.",
+              text: "Receive daily AI news, tool alerts and industry trends — stay ahead of every update.",
               btn: "Join Newsletter",
             },
           ].map((card, i) => (
             <div
               key={i}
-              className="bg-white border border-neutral-200 p-8 rounded-2xl shadow hover:shadow-lg transition-transform hover:-translate-y-2 animate-slideUp text-center"
+              className="bg-white border border-neutral-200 p-8 rounded-2xl shadow hover:shadow-lg transition-transform hover:-translate-y-2 animate-slideUp text-center flex flex-col h-full"
             >
               <div className="flex justify-center items-center mb-6">
                 <div className="text-blue-500 text-5xl">{card.icon}</div>
               </div>
+
               <h3 className="font-montserrat text-xl font-semibold mb-2">
                 {card.title}
               </h3>
+
               <p className="text-neutral-600 text-sm mb-6 font-inter">
                 {card.text}
               </p>
+
+              {/* Button pushed to bottom so all align */}
               <a
                 href="#"
-                className="inline-flex items-center justify-center w-56 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold rounded-full transition duration-300"
+                className="inline-flex items-center self-center justify-center w-56 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-inter font-semibold rounded-full transition duration-300 mt-auto"
               >
                 {card.btn}
+                <span>
+                  <BiChevronRight size={20} className="ml-2" />
+                </span>
               </a>
             </div>
           ))}
