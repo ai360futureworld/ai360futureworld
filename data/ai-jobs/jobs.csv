@@ -1,0 +1,3 @@
+job_title,company,location,job_type,category,tags,salary,apply_link,source_name,posted_at,logo
+"Machine Learning Engineer","Acme AI","Remote","Full-time","AI & Machine Learning Jobs","Remote;Full-Time","$120k-$150k","https://partner.example.com/track/acme-ml","Acme Careers","2025-11-05","https://logo.clearbit.com/acme.com"
+"Data Scientist","DataWorks","New York, USA","Full-time","Data Science Jobs","On-Site;Full-Time","$110k-$140k","https://partner.example.com/track/dataworks-ds","DataWorks","2025-11-03","https://logo.clearbit.com/dataworks.com"
