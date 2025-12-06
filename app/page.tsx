@@ -1,15 +1,15 @@
 import AICoursesPreview from "@/components/AICoursesPreview";
 import AIJobsListing from "@/components/AIJobsListing";
-import AINewsBlog from "@/components/AINewsBlog";
+// import AINewsBlog from "@/components/AINewsBlog";
 import AITechOverview from "@/components/AITechOverview";
 import AIToolsPreview from "@/components/AIToolsPreview";
-import ExploreNetwork from "@/components/ExploreNetwork";
+// import ExploreNetwork from "@/components/ExploreNetwork";
 import GlobalStats from "@/components/GlobalStats";
 import HeroSection from "@/components/HeroSection";
 import NewsletterSection from "@/components/NewsletterSection";
-import TopAICourses from "@/components/TopAICourses";
+// import TopAICourses from "@/components/TopAICourses";
 import TrustedPlatforms from "@/components/TrustedPlatforms";
-import UpcomingAITools from "@/components/UpcomingAITools";
+// import UpcomingAITools from "@/components/UpcomingAITools";
 
 export default function Home() {
   return (

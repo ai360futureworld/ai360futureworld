@@ -1,19 +1,19 @@
 "use client";
 
-import { BiChevronDown, BiChevronRight } from "react-icons/bi";
+import { BiChevronRight } from "react-icons/bi";
 import {
   FaGlobe,
   FaTelegramPlane,
-  FaBookOpen,
+  // FaBookOpen,
   FaEnvelope,
   FaBullseye,
   FaGraduationCap,
-  FaRegEnvelope,
+  // FaRegEnvelope,
 } from "react-icons/fa";
-import { FaLocationDot, FaTelegram } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 import { HiAcademicCap, HiEye, HiLightBulb, HiUsers } from "react-icons/hi";
-import { HiOutlineEye, HiOutlineUsers } from "react-icons/hi2";
-import { LuBrain, LuLightbulb } from "react-icons/lu";
+// import { HiOutlineEye, HiOutlineUsers } from "react-icons/hi2";
+// import { LuBrain, LuLightbulb } from "react-icons/lu";
 
 export default function AboutPage() {
   return (
