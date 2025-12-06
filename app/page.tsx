@@ -13,7 +13,7 @@ import UpcomingAITools from "@/components/UpcomingAITools";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50">
       <HeroSection />
       <GlobalStats />
       <TrustedPlatforms />
@@ -22,6 +22,6 @@ export default function Home() {
       <AITechOverview />
       <AIJobsListing />
       <NewsletterSection />
-    </div>
+    </main>
   );
 }
